@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Paper Trading Dashboard</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.umd.min.js"></script>
+<style>
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: #0a0e17;
+    color: #e2e8f0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  }
+  header {
+    padding: 16px 20px;
+    border-bottom: 1px solid #1e293b;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    position: sticky;
+    top: 0;
+    background: rgba(10,14,23,0.95);
+    backdrop-filter: blur(6px);
+    z-index: 10;
+  }
+  .brand { display: flex; align-items: center; gap: 10px; }
+  .brand .logo {
+    width: 34px; height: 34px; border-radius: 8px;
+    background: linear-gradient(135deg,#10b981,#0d9488);
+    display: flex; align-items: center; justify-content: center;
+    font-weight: 800; font-size: 16px;
+  }
+  .brand .title { font-weight: 700; font-size: 15px; }
+  .brand .subtitle { font-size: 11px; color: #64748b; }
+  .stats { display: flex; gap: 18px; font-family: 'SF Mono', 'JetBrains Mono', monospace; font-size: 13px; flex-wrap: wrap; }
+  .stat-label { font-size: 10px; color: #64748b; text-transform: uppercase; letter-spacing: 0.5px; }
+  .stat-value { font-weight: 600; font-size: 14px; }
+  .pos { color: #34d399; }
+  .neg { color: #f87171; }
+  main { max-width: 1100px; margin: 0 auto; padding: 20px; }
+  .status-bar {
+    font-size: 12px; color: #fbbf24; background: rgba(251,191,36,0.08);
+    border: 1px solid rgba(251,191,36,0.2); border-radius: 8px;
+    padding: 8px 12px; margin-bottom: 18px;
+  }
+  .section-title { font-size: 13px; font-weight: 700; color: #cbd5e1; margin: 24px 0 10px; }
+  .card { background: #0f1420; border: 1px solid #1e293b; border-radius: 12px; overflow: hidden; }
+  table { width: 100%; border-collapse: collapse; font-size: 13px; }
+  th {
+    text-align: left; padding: 10px 12px; background: #131a29;
+    color: #64748b; font-size: 10px; text-transform: uppercase; letter-spacing: 0.5px;
+    border-bottom: 1px solid #1e293b;
+  }
+  td { padding: 9px 12px; border-top: 1px solid #1a2233; font-family: 'SF Mono', 'JetBrains Mono', monospace; }
+  th.num, td.num { text-align: right; }
+  .empty { text-align: center; color: #475569; padding: 30px; font-family: inherit; }
+  .chart-wrap { background: #0f1420; border: 1px solid #1e293b; border-radius: 12px; padding: 16px; height: 260px; }
+  .refresh-note { font-size: 11px; color: #475569; text-align: center; margin-top: 20px; }
+  .badge { font-size: 10px; padding: 2px 7px; border-radius: 20px; font-weight: 600; }
+  .badge-swing { background: rgba(56,189,248,0.15); color: #38bdf8; }
+  .badge-intraday { background: rgba(168,85,247,0.15); color: #a855f7; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="brand">
+    <div class="logo">₹</div>
+    <div>
+      <div class="title">Paper Trading Dashboard</div>
+      <div class="subtitle" id="lastUpdated">Load ho raha hai...</div>
+    </div>
+  </div>
+  <div class="stats">
+    <div><div class="stat-label">Equity</div><div class="stat-value" id="statEquity">-</div></div>
+    <div><div class="stat-label">Cash</div><div class="stat-value" id="statCash">-</div></div>
+    <div><div class="stat-label">Total P&L</div><div class="stat-value" id="statPL">-</div></div>
+    <div><div class="stat-label">Win Rate</div><div class="stat-value" id="statWinRate">-</div></div>
+  </div>
+</header>
+
+<main>
+  <div class="status-bar">
+    Ye sirf <b>paper (virtual) trading</b> hai, real paisa involved nahi hai. Data har ~10 min me refresh hota hai jab bot scan chalata hai.
+  </div>
+
+  <div class="section-title">Equity Curve (Realized P&L over time)</div>
+  <div class="chart-wrap"><canvas id="equityChart"></canvas></div>
+
+  <div class="section-title">Open Positions</div>
+  <div class="card">
+    <table>
+      <thead>
+        <tr>
+          <th>Type</th><th>Stock</th><th class="num">Qty</th><th class="num">Entry</th>
+          <th class="num">Stop</th><th class="num">Target</th><th>Entry Date</th>
+        </tr>
+      </thead>
+      <tbody id="positionsBody"></tbody>
+    </table>
+  </div>
+
+  <div class="section-title">Trade History (Report)</div>
+  <div class="card">
+    <table>
+      <thead>
+        <tr>
+          <th>Type</th><th>Stock</th><th>Purchase Date</th><th class="num">Qty</th>
+          <th class="num">Purchase Amt</th><th>Sale Date</th><th class="num">Sale Qty</th>
+          <th class="num">Sale Amt</th><th class="num">Profit</th><th>Reason</th>
+        </tr>
+      </thead>
+      <tbody id="historyBody"></tbody>
+    </table>
+  </div>
+
+  <div class="refresh-note">Auto-refresh har 60 second me • Data source: <code>data/state.json</code></div>
+</main>
+
+<script>
+const CAPITAL_FALLBACK = 20000;
+let chart;
+
+function money(n) {
+  if (n == null || isNaN(n)) return "-";
+  return "₹" + Math.round(n).toLocaleString("en-IN");
+}
+function fmtDate(iso) {
+  if (!iso) return "-";
+  const d = new Date(iso);
+  return d.toLocaleDateString("en-IN", { day: "2-digit", month: "short", year: "numeric" });
+}
+
+async function loadData() {
+  try {
+    const res = await fetch("data/state.json?t=" + Date.now());
+    if (!res.ok) throw new Error("state.json nahi mila");
+    const state = await res.json();
+    render(state);
+    document.getElementById("lastUpdated").textContent = "Live • Refreshed " + new Date().toLocaleTimeString("en-IN");
+  } catch (e) {
+    document.getElementById("lastUpdated").textContent = "Data load nahi ho paya — bot ne pehla scan abhi complete nahi kiya hoga";
+  }
+}
+
+function render(state) {
+  const cash = state.cash ?? 0;
+  const positions = state.positions ?? [];
+  const history = state.history ?? [];
+
+  const investedValue = positions.reduce((s, p) => s + p.entry * p.qty, 0);
+  const equity = cash + investedValue; // approx (no live LTP on static page)
+  const realizedPL = history.reduce((s, t) => s + t.profit, 0);
+  const wins = history.filter((t) => t.profit > 0).length;
+  const winRate = history.length ? Math.round((wins / history.length) * 100) : 0;
+
+  document.getElementById("statEquity").textContent = money(equity);
+  document.getElementById("statCash").textContent = money(cash);
+  const plEl = document.getElementById("statPL");
+  plEl.textContent = money(realizedPL);
+  plEl.className = "stat-value " + (realizedPL >= 0 ? "pos" : "neg");
+  document.getElementById("statWinRate").textContent = winRate + "%";
+
+  // Positions table
+  const posBody = document.getElementById("positionsBody");
+  posBody.innerHTML = "";
+  if (positions.length === 0) {
+    posBody.innerHTML = '<tr><td colspan="7" class="empty">Koi open position nahi hai</td></tr>';
+  } else {
+    positions.forEach((p) => {
+      const badge = p.type === "swing" ? "badge-swing" : "badge-intraday";
+      posBody.innerHTML += `<tr>
+        <td><span class="badge ${badge}">${p.type}</span></td>
+        <td>${p.name}</td>
+        <td class="num">${p.qty}</td>
+        <td class="num">${money(p.entry)}</td>
+        <td class="num" style="color:#f87171">${money(p.stop)}</td>
+        <td class="num" style="color:#34d399">${money(p.target)}</td>
+        <td>${fmtDate(p.entry_date)}</td>
+      </tr>`;
+    });
+  }
+
+  // History table (latest first)
+  const histBody = document.getElementById("historyBody");
+  histBody.innerHTML = "";
+  const sorted = [...history].sort((a, b) => new Date(b.sale_date) - new Date(a.sale_date));
+  if (sorted.length === 0) {
+    histBody.innerHTML = '<tr><td colspan="10" class="empty">Abhi koi trade complete nahi hua</td></tr>';
+  } else {
+    sorted.forEach((t) => {
+      const badge = t.type === "swing" ? "badge-swing" : "badge-intraday";
+      const plClass = t.profit >= 0 ? "pos" : "neg";
+      histBody.innerHTML += `<tr>
+        <td><span class="badge ${badge}">${t.type}</span></td>
+        <td>${t.name}</td>
+        <td>${fmtDate(t.purchase_date)}</td>
+        <td class="num">${t.qty}</td>
+        <td class="num">${money(t.purchase_amount)}</td>
+        <td>${fmtDate(t.sale_date)}</td>
+        <td class="num">${t.sale_qty}</td>
+        <td class="num">${money(t.sale_amount)}</td>
+        <td class="num ${plClass}">${money(t.profit)}</td>
+        <td style="color:#64748b">${t.reason}</td>
+      </tr>`;
+    });
+  }
+
+  // Equity curve chart (cumulative realized P&L over closed trades, chronological)
+  const chronological = [...history].sort((a, b) => new Date(a.sale_date) - new Date(b.sale_date));
+  const capital = CAPITAL_FALLBACK;
+  let running = capital;
+  const labels = ["Start"];
+  const dataPoints = [capital];
+  chronological.forEach((t) => {
+    running += t.profit;
+    labels.push(fmtDate(t.sale_date));
+    dataPoints.push(Math.round(running));
+  });
+
+  const ctx = document.getElementById("equityChart").getContext("2d");
+  if (chart) chart.destroy();
+  chart = new Chart(ctx, {
+    type: "line",
+    data: {
+      labels,
+      datasets: [{
+        label: "Equity (₹)",
+        data: dataPoints,
+        borderColor: "#10b981",
+        backgroundColor: "rgba(16,185,129,0.08)",
+        fill: true,
+        tension: 0.25,
+        pointRadius: 2,
+      }],
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      plugins: { legend: { display: false } },
+      scales: {
+        x: { ticks: { color: "#475569", maxTicksLimit: 8 }, grid: { color: "#131a29" } },
+        y: { ticks: { color: "#475569" }, grid: { color: "#131a29" } },
+      },
+    },
+  });
+}
+
+loadData();
+setInterval(loadData, 60000);
+</script>
+
+</body>
+</html>

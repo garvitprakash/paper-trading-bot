@@ -1,0 +1,43 @@
+name: Paper Trading Bot Scan
+
+on:
+  schedule:
+    # Cron time hamesha UTC me hoti hai. IST = UTC + 5:30.
+    # Neeche wala schedule roughly 9:15 AM - 3:30 PM IST, Mon-Fri, har 10 min me chalata hai.
+    # (03:45 UTC - 10:00 UTC  ==  09:15 IST - 15:30 IST)
+    - cron: "*/10 3-9 * * 1-5"
+    - cron: "45,55 3 * * 1-5"
+  workflow_dispatch: {}   # isse aap manually bhi "Run workflow" button se chala sakte hain
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Repo checkout karo
+        uses: actions/checkout@v4
+
+      - name: Python setup karo
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Dependencies install karo
+        run: pip install -r requirements.txt
+
+      - name: Bot chalao (ek scan)
+        env:
+          ANGEL_API_KEY: ${{ secrets.ANGEL_API_KEY }}
+          ANGEL_CLIENT_CODE: ${{ secrets.ANGEL_CLIENT_CODE }}
+          ANGEL_PASSWORD: ${{ secrets.ANGEL_PASSWORD }}
+          ANGEL_TOTP_SECRET: ${{ secrets.ANGEL_TOTP_SECRET }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: python run_once.py
+
+      - name: Naya data wapas repo me save karo
+        run: |
+          git config --global user.name "trading-bot"
+          git config --global user.email "bot@users.noreply.github.com"
+          git add data/
+          git diff --quiet && git diff --staged --quiet || git commit -m "Portfolio update $(date -u +'%Y-%m-%d %H:%M UTC')"
+          git push
