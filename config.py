@@ -33,9 +33,16 @@ SWING_TRAIL_PCT = 0.04
 INTRADAY_TARGET_PCT = 0.02
 
 WATCHLIST = [
+    # Large-cap / Swing ke liye achhe (trend-following)
     "RELIANCE", "TCS", "HDFCBANK", "INFY", "ICICIBANK", "ITC", "SBIN",
     "BHARTIARTL", "KOTAKBANK", "LT", "AXISBANK", "TITAN", "SUNPHARMA",
     "WIPRO", "TATAMOTORS", "TATASTEEL", "HCLTECH", "JSWSTEEL", "COALINDIA", "NTPC",
+    "ADANIENT", "ADANIPORTS", "BAJFINANCE", "BAJAJFINSV", "MARUTI",
+    "HINDALCO", "VEDANTA", "ONGC", "GAIL", "IOC", "BPCL", "INDUSINDBK",
+
+    # High-volume / Intraday favorites (retail me bahut active, price movement zyada)
+    "PNB", "CANBK", "BANKBARODA", "FEDERALBNK", "IDFCFIRSTB", "YESBANK",
+    "IDEA", "SUZLON", "TATAPOWER", "SAIL", "NATIONALUM", "RVNL", "IRFC", "ZOMATO","CUPID", "NETWEB", "RRKABEL",
 ]
 
 DATA_DIR = "data"
