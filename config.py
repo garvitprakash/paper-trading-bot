@@ -18,7 +18,7 @@ TELEGRAM_BOT_TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN", "YOUR_BOT_TOKEN")
 TELEGRAM_CHAT_ID = os.environ.get("TELEGRAM_CHAT_ID", "YOUR_CHAT_ID")
 
 # ---- Trading settings (ye sab yahin badal sakte hain, secret nahi hain) ----
-CAPITAL = 50000
+CAPITAL = 100000
 RISK_PER_TRADE_PCT = 1.0
 MAX_SWING_POSITIONS = 3
 MAX_INTRADAY_POSITIONS = 2
