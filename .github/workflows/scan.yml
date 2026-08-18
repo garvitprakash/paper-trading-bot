@@ -4,14 +4,20 @@ on:
   schedule:
     # Cron time hamesha UTC me hoti hai. IST = UTC + 5:30.
     # Neeche wala schedule roughly 9:15 AM - 3:30 PM IST, Mon-Fri, har 10 min me chalata hai.
-    # (03:45 UTC - 10:00 UTC  ==  09:15 IST - 15:30 IST)
     - cron: "*/10 3-9 * * 1-5"
     - cron: "45,55 3 * * 1-5"
   workflow_dispatch: {}   # isse aap manually bhi "Run workflow" button se chala sakte hain
 
+concurrency:
+  group: paper-trading-scan
+  cancel-in-progress: false   # agar pichla run abhi chal raha ho, naya run wait karega
+                               # (universe ab bada hai — ek scan me 10-15+ min lag sakte hain,
+                               # isse do runs ek saath state.json me clash nahi karenge)
+
 jobs:
   scan:
     runs-on: ubuntu-latest
+    timeout-minutes: 30
     steps:
       - name: Repo checkout karo
         uses: actions/checkout@v4
@@ -40,4 +46,5 @@ jobs:
           git config --global user.email "bot@users.noreply.github.com"
           git add data/
           git diff --quiet && git diff --staged --quiet || git commit -m "Portfolio update $(date -u +'%Y-%m-%d %H:%M UTC')"
+          git pull --rebase origin main || true
           git push
