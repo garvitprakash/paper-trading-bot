@@ -1,0 +1,18 @@
+{
+  "cash": 78576.4,
+  "positions": [
+    {
+      "id": "NETWEB-EQ-1787029032.791576",
+      "type": "swing",
+      "symbol": "NETWEB-EQ",
+      "name": "NETWEB",
+      "qty": 4,
+      "entry": 5355.9,
+      "entry_date": "2026-08-18T04:57:12.791590",
+      "stop": 5141.664,
+      "target": 5837.931,
+      "peak": 5355.9
+    }
+  ],
+  "history": []
+}
