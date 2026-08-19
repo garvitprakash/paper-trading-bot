@@ -1,5 +1,5 @@
 {
-  "cash": 53646.399999999994,
+  "cash": 7006.399999999994,
   "positions": [
     {
       "id": "NETWEB-EQ-1787029032.791576",
@@ -24,6 +24,25 @@
       "stop": 79.776,
       "target": 90.579,
       "peak": 83.1
+    },
+    {
+      "id": "BAJAJ-AUTO-EQ-1787125316.677071",
+      "type": "intraday",
+      "symbol": "BAJAJ-AUTO-EQ",
+      "name": "BAJAJ-AUTO",
+      "qty": 4,
+      "entry": 11660.0,
+      "entry_date": "2026-08-19T13:11:56.677171",
+      "stop": 11640.0,
+      "target": 11860.0,
+      "peak": 11660.0,
+      "initial_sl": 11640.0,
+      "risk_per_share": 20.0,
+      "stage": 0,
+      "partial_booked": false,
+      "smart_partial_booked": false,
+      "atr_mult": 1.5,
+      "cap_class": "large"
     }
   ],
   "history": []
