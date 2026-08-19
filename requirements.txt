@@ -1,6 +1,2 @@
-smartapi-python
-pyotp
 requests
 pytz
-websocket-client
-logzero

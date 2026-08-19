@@ -1,10 +1,13 @@
-"""Dynamic stock universe — Nifty 50 + Nifty Next 50 + Midcap 100 + Smallcap 100
+"""Stock universe — Nifty 50 + Midcap 50 + Smallcap 50 (total ~150 stocks).
 NSE ki public index-constituent CSV files se fetch karta hai (roz nahi, cache
 karke rakhta hai taaki har scan pe dobara download na karna pade).
 
-Har symbol ko uski 'cap class' (large/mid/small) bhi milti hai — isse Intraday PRO
-system apna ATR trailing multiplier decide karta hai (large-cap kam volatile,
-small-cap zyada volatile, isliye alag buffer chahiye).
+Pehle 300-500 stocks wala universe tha, jisse Angel One rate-limit lagne laga
+tha ("Too many requests"). Isliye ab chhota (150) universe use kar rahe hain —
+kam API calls, kam risk, jaldi scan complete hota hai.
+
+Har symbol ko uski 'cap class' (large/mid/small) bhi milti hai — isse Intraday
+PRO system apna ATR trailing multiplier decide karta hai.
 """
 
 import csv
@@ -20,13 +23,12 @@ import config
 INDEX_URLS = {
     "large": [
         "https://nsearchives.nseindia.com/content/indices/ind_nifty50list.csv",
-        "https://nsearchives.nseindia.com/content/indices/ind_niftynext50list.csv",
     ],
     "mid": [
-        "https://nsearchives.nseindia.com/content/indices/ind_niftymidcap100list.csv",
+        "https://nsearchives.nseindia.com/content/indices/ind_niftymidcap50list.csv",
     ],
     "small": [
-        "https://nsearchives.nseindia.com/content/indices/ind_niftysmallcap100list.csv",
+        "https://nsearchives.nseindia.com/content/indices/ind_niftysmallcap50list.csv",
     ],
 }
 
@@ -41,8 +43,6 @@ HEADERS = {
     "Accept": "text/csv,application/vnd.ms-excel,*/*",
 }
 
-# Agar kabhi NSE se fetch bilkul fail ho jaaye (network/format change) aur koi
-# purani cache bhi na ho, to bot bilkul khaali haath na rahe — chhota safe fallback.
 FALLBACK_WATCHLIST = {
     "RELIANCE": "large", "TCS": "large", "HDFCBANK": "large", "INFY": "large",
     "ICICIBANK": "large", "ITC": "large", "SBIN": "large", "BHARTIARTL": "large",
@@ -70,7 +70,6 @@ def _fetch_csv_symbols(url):
 
 
 def build_universe(force_refresh=False):
-    """Symbol -> cap_class ('large'/'mid'/'small') ka dict deta hai."""
     os.makedirs(config.DATA_DIR, exist_ok=True)
 
     if not force_refresh and os.path.exists(CACHE_FILE):
@@ -91,7 +90,6 @@ def build_universe(force_refresh=False):
                 universe[sym] = cap_class
 
     if not universe:
-        # Fresh fetch fail hui — purani cache try karo, warna hardcoded fallback
         if os.path.exists(CACHE_FILE):
             try:
                 with open(CACHE_FILE) as f:
@@ -107,5 +105,5 @@ def build_universe(force_refresh=False):
     with open(CACHE_FILE, "w") as f:
         json.dump({"fetched_at": time.time(), "universe": universe}, f)
 
-    print(f"Naya universe fetch hua: {len(universe)} stocks (Nifty50+Next50+Midcap100+Smallcap100)")
+    print(f"Naya universe fetch hua: {len(universe)} stocks (Nifty50 + Midcap50 + Smallcap50)")
     return universe

@@ -1,24 +1,21 @@
 """Config — GitHub Actions me ye values 'Secrets' se aayengi (environment variables ke through).
 
-Apne PC par local test karna ho to neeche 'YOUR_...' ki jagah apni details daal
-sakte hain, PAR GitHub par push karne se PEHLE unhe wapas 'YOUR_...' kar dein —
-asli values sirf GitHub Secrets me hi rakhein, is file me kabhi nahi.
+Data ab Yahoo Finance se aata hai — koi login/API-key/TOTP ki zaroorat nahi hai
+(pehle Angel One use hota tha, ab hata diya gaya hai). Sirf Telegram credentials
+chahiye notifications ke liye.
 """
 
 import os
-
-# ---- Angel One SmartAPI credentials (GitHub Secrets se aayengi) ----
-API_KEY = os.environ.get("ANGEL_API_KEY", "YOUR_API_KEY")
-CLIENT_CODE = os.environ.get("ANGEL_CLIENT_CODE", "YOUR_CLIENT_ID")
-PASSWORD = os.environ.get("ANGEL_PASSWORD", "YOUR_MPIN")
-TOTP_SECRET = os.environ.get("ANGEL_TOTP_SECRET", "YOUR_TOTP_SECRET")
 
 # ---- Telegram notifications (GitHub Secrets se aayengi) ----
 TELEGRAM_BOT_TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN", "YOUR_BOT_TOKEN")
 TELEGRAM_CHAT_ID = os.environ.get("TELEGRAM_CHAT_ID", "YOUR_CHAT_ID")
 
 # ---- Trading settings (ye sab yahin badal sakte hain, secret nahi hain) ----
-CAPITAL = 100000
+# Swing aur Intraday ab do ALAG cash pools use karte hain — ek doosre ka paisa
+# nahi chhuenge. Website par bhi dono alag-alag dikhte hain.
+SWING_CAPITAL = 50000
+INTRADAY_CAPITAL = 50000
 RISK_PER_TRADE_PCT = 1.0
 MAX_SWING_POSITIONS = 3
 MAX_INTRADAY_POSITIONS = 2
@@ -53,9 +50,13 @@ SMART_EXIT_VWAP_DIST_PCT = 1.5    # VWAP se itna % dur hone par "bahut dur" maan
 SMART_EXIT_BOOK_PCT = 0.25        # kitna % position book hoga jab ye rule trigger ho
 
 # ---- Universe scanning ----
-# Watchlist ab fixed nahi hai — universe.py NSE se Nifty50+Next50+Midcap100+Smallcap100
-# (~300-500 stocks) fetch karta hai. Itne stocks scan karne me time zyada lagta hai,
-# isliye har API call ke beech thoda zyada gap rakha hai (rate-limit se bachne ke liye).
-SCAN_DELAY_SECONDS = 0.35
+# Watchlist ab fixed nahi hai — universe.py NSE se Nifty50+Midcap50+Smallcap50
+# (~150 stocks) fetch karta hai. Yahoo Finance Angel One jaisa strict rate-limit
+# nahi lagata, isliye delay chhota rakh sakte hain.
+SCAN_DELAY_SECONDS = 0.4
+
+# Har trade me max itna hi paisa lagega (ek company me), chahe risk-calculation
+# zyada bataye — ye ek hard safety cap hai.
+MAX_TRADE_AMOUNT = 5000
 
 DATA_DIR = "data"
