@@ -1,0 +1,12 @@
+# Python cache files — inko commit karne ki zaroorat nahi
+__pycache__/
+*.pyc
+
+# Bot ka live log file — sirf local reference ke liye, GitHub par nahi jaani chahiye
+bot.log
+
+# Agar koi aur logs folder banti hai
+logs/
+
+# Termux/system files
+.termux/
