@@ -1,5 +1,5 @@
 {
-  "cash": 78576.4,
+  "cash": 53646.399999999994,
   "positions": [
     {
       "id": "NETWEB-EQ-1787029032.791576",
@@ -12,6 +12,18 @@
       "stop": 5141.664,
       "target": 5837.931,
       "peak": 5355.9
+    },
+    {
+      "id": "IFCI-EQ-1787111706.847318",
+      "type": "swing",
+      "symbol": "IFCI-EQ",
+      "name": "IFCI",
+      "qty": 300,
+      "entry": 83.1,
+      "entry_date": "2026-08-19T09:25:06.848649",
+      "stop": 79.776,
+      "target": 90.579,
+      "peak": 83.1
     }
   ],
   "history": []
