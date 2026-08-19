@@ -1,5 +1,5 @@
 {
-  "cash": 7006.399999999994,
+  "cash": 1113.4999999999945,
   "positions": [
     {
       "id": "NETWEB-EQ-1787029032.791576",
@@ -43,6 +43,18 @@
       "smart_partial_booked": false,
       "atr_mult": 1.5,
       "cap_class": "large"
+    },
+    {
+      "id": "WELCORP-EQ-1787126403.133421",
+      "type": "swing",
+      "symbol": "WELCORP-EQ",
+      "name": "WELCORP",
+      "qty": 3,
+      "entry": 1964.3,
+      "entry_date": "2026-08-19T13:30:03.133519",
+      "stop": 1885.7279999999998,
+      "target": 2141.087,
+      "peak": 1964.3
     }
   ],
   "history": []
