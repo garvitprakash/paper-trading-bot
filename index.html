@@ -36,17 +36,30 @@
   }
   .brand .title { font-weight: 700; font-size: 15px; }
   .brand .subtitle { font-size: 11px; color: #64748b; }
-  .stats { display: flex; gap: 18px; font-family: 'SF Mono', 'JetBrains Mono', monospace; font-size: 13px; flex-wrap: wrap; }
-  .stat-label { font-size: 10px; color: #64748b; text-transform: uppercase; letter-spacing: 0.5px; }
-  .stat-value { font-weight: 600; font-size: 14px; }
-  .pos { color: #34d399; }
-  .neg { color: #f87171; }
   main { max-width: 1100px; margin: 0 auto; padding: 20px; }
   .status-bar {
     font-size: 12px; color: #fbbf24; background: rgba(251,191,36,0.08);
     border: 1px solid rgba(251,191,36,0.2); border-radius: 8px;
     padding: 8px 12px; margin-bottom: 18px;
   }
+  .summary-row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-bottom: 24px; }
+  @media (max-width: 640px) { .summary-row { grid-template-columns: 1fr; } }
+  .summary-card {
+    border-radius: 14px; padding: 16px 18px; border: 1px solid #1e293b;
+  }
+  .summary-card.swing { background: linear-gradient(135deg, rgba(56,189,248,0.08), #0f1420); }
+  .summary-card.intraday { background: linear-gradient(135deg, rgba(168,85,247,0.08), #0f1420); }
+  .summary-card .heading { display: flex; align-items: center; gap: 8px; margin-bottom: 12px; }
+  .summary-card .heading .dot { width: 8px; height: 8px; border-radius: 50%; }
+  .summary-card.swing .dot { background: #38bdf8; }
+  .summary-card.intraday .dot { background: #a855f7; }
+  .summary-card .heading .label { font-weight: 700; font-size: 14px; }
+  .summary-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; }
+  @media (max-width: 500px) { .summary-grid { grid-template-columns: repeat(2, 1fr); } }
+  .stat-label { font-size: 9px; color: #64748b; text-transform: uppercase; letter-spacing: 0.5px; }
+  .stat-value { font-weight: 700; font-size: 15px; font-family: 'SF Mono', 'JetBrains Mono', monospace; margin-top: 2px; }
+  .pos { color: #34d399; }
+  .neg { color: #f87171; }
   .section-title { font-size: 13px; font-weight: 700; color: #cbd5e1; margin: 24px 0 10px; }
   .card { background: #0f1420; border: 1px solid #1e293b; border-radius: 12px; overflow: hidden; }
   table { width: 100%; border-collapse: collapse; font-size: 13px; }
@@ -75,17 +88,32 @@
       <div class="subtitle" id="lastUpdated">Load ho raha hai...</div>
     </div>
   </div>
-  <div class="stats">
-    <div><div class="stat-label">Equity</div><div class="stat-value" id="statEquity">-</div></div>
-    <div><div class="stat-label">Cash</div><div class="stat-value" id="statCash">-</div></div>
-    <div><div class="stat-label">Total P&L</div><div class="stat-value" id="statPL">-</div></div>
-    <div><div class="stat-label">Win Rate</div><div class="stat-value" id="statWinRate">-</div></div>
-  </div>
 </header>
 
 <main>
   <div class="status-bar">
-    Ye sirf <b>paper (virtual) trading</b> hai, real paisa involved nahi hai. Data har ~10 min me refresh hota hai jab bot scan chalata hai.
+    Ye sirf <b>paper (virtual) trading</b> hai, real paisa involved nahi hai. Swing aur Intraday ke capital <b>alag-alag</b> hain (₹50,000 + ₹50,000) — ek doosre ka paisa use nahi karte.
+  </div>
+
+  <div class="summary-row">
+    <div class="summary-card swing">
+      <div class="heading"><span class="dot"></span><span class="label">Swing Trading</span></div>
+      <div class="summary-grid">
+        <div><div class="stat-label">Equity</div><div class="stat-value" id="swingEquity">-</div></div>
+        <div><div class="stat-label">Cash</div><div class="stat-value" id="swingCash">-</div></div>
+        <div><div class="stat-label">P&L</div><div class="stat-value" id="swingPL">-</div></div>
+        <div><div class="stat-label">Win Rate</div><div class="stat-value" id="swingWinRate">-</div></div>
+      </div>
+    </div>
+    <div class="summary-card intraday">
+      <div class="heading"><span class="dot"></span><span class="label">Intraday</span></div>
+      <div class="summary-grid">
+        <div><div class="stat-label">Equity</div><div class="stat-value" id="intradayEquity">-</div></div>
+        <div><div class="stat-label">Cash</div><div class="stat-value" id="intradayCash">-</div></div>
+        <div><div class="stat-label">P&L</div><div class="stat-value" id="intradayPL">-</div></div>
+        <div><div class="stat-label">Win Rate</div><div class="stat-value" id="intradayWinRate">-</div></div>
+      </div>
+    </div>
   </div>
 
   <div class="section-title">Equity Curve (Realized P&L over time)</div>
@@ -122,7 +150,8 @@
 </main>
 
 <script>
-const CAPITAL_FALLBACK = 20000;
+const SWING_CAPITAL_FALLBACK = 50000;
+const INTRADAY_CAPITAL_FALLBACK = 50000;
 let chart;
 
 function money(n) {
@@ -147,25 +176,39 @@ async function loadData() {
   }
 }
 
-function render(state) {
-  const cash = state.cash ?? 0;
-  const positions = state.positions ?? [];
-  const history = state.history ?? [];
+function computeTypeSummary(state, type) {
+  const cashKey = type + "_cash";
+  const cash = state[cashKey] ?? 0;
+  const positions = (state.positions ?? []).filter((p) => p.type === type);
+  const history = (state.history ?? []).filter((t) => t.type === type);
 
-  const investedValue = positions.reduce((s, p) => s + p.entry * p.qty, 0);
-  const equity = cash + investedValue; // approx (no live LTP on static page)
+  const invested = positions.reduce((s, p) => s + p.entry * p.qty, 0);
+  const equity = cash + invested;
   const realizedPL = history.reduce((s, t) => s + t.profit, 0);
   const wins = history.filter((t) => t.profit > 0).length;
   const winRate = history.length ? Math.round((wins / history.length) * 100) : 0;
 
-  document.getElementById("statEquity").textContent = money(equity);
-  document.getElementById("statCash").textContent = money(cash);
-  const plEl = document.getElementById("statPL");
-  plEl.textContent = money(realizedPL);
-  plEl.className = "stat-value " + (realizedPL >= 0 ? "pos" : "neg");
-  document.getElementById("statWinRate").textContent = winRate + "%";
+  return { cash, invested, equity, realizedPL, winRate, positions, history };
+}
 
-  // Positions table
+function fillSummaryCard(prefix, summary) {
+  document.getElementById(prefix + "Equity").textContent = money(summary.equity);
+  document.getElementById(prefix + "Cash").textContent = money(summary.cash);
+  const plEl = document.getElementById(prefix + "PL");
+  plEl.textContent = money(summary.realizedPL);
+  plEl.className = "stat-value " + (summary.realizedPL >= 0 ? "pos" : "neg");
+  document.getElementById(prefix + "WinRate").textContent = summary.winRate + "%";
+}
+
+function render(state) {
+  const swing = computeTypeSummary(state, "swing");
+  const intraday = computeTypeSummary(state, "intraday");
+  fillSummaryCard("swing", swing);
+  fillSummaryCard("intraday", intraday);
+
+  const positions = state.positions ?? [];
+  const history = state.history ?? [];
+
   const posBody = document.getElementById("positionsBody");
   posBody.innerHTML = "";
   if (positions.length === 0) {
@@ -185,7 +228,6 @@ function render(state) {
     });
   }
 
-  // History table (latest first)
   const histBody = document.getElementById("historyBody");
   histBody.innerHTML = "";
   const sorted = [...history].sort((a, b) => new Date(b.sale_date) - new Date(a.sale_date));
@@ -210,17 +252,25 @@ function render(state) {
     });
   }
 
-  // Equity curve chart (cumulative realized P&L over closed trades, chronological)
-  const chronological = [...history].sort((a, b) => new Date(a.sale_date) - new Date(b.sale_date));
-  const capital = CAPITAL_FALLBACK;
-  let running = capital;
-  const labels = ["Start"];
-  const dataPoints = [capital];
-  chronological.forEach((t) => {
-    running += t.profit;
-    labels.push(fmtDate(t.sale_date));
-    dataPoints.push(Math.round(running));
-  });
+  // Equity curve — dono lines (Swing + Intraday), apne apne capital se shuru
+  const swingChrono = [...swing.history].sort((a, b) => new Date(a.sale_date) - new Date(b.sale_date));
+  const intradayChrono = [...intraday.history].sort((a, b) => new Date(a.sale_date) - new Date(b.sale_date));
+
+  function buildSeries(chronoTrades, startCapital) {
+    let running = startCapital;
+    const points = [{ label: "Start", value: running }];
+    chronoTrades.forEach((t) => {
+      running += t.profit;
+      points.push({ label: fmtDate(t.sale_date), value: Math.round(running) });
+    });
+    return points;
+  }
+
+  const swingSeries = buildSeries(swingChrono, SWING_CAPITAL_FALLBACK);
+  const intradaySeries = buildSeries(intradayChrono, INTRADAY_CAPITAL_FALLBACK);
+  const maxLen = Math.max(swingSeries.length, intradaySeries.length);
+  const labels = Array.from({ length: maxLen }, (_, i) =>
+    swingSeries[i]?.label || intradaySeries[i]?.label || "");
 
   const ctx = document.getElementById("equityChart").getContext("2d");
   if (chart) chart.destroy();
@@ -228,20 +278,27 @@ function render(state) {
     type: "line",
     data: {
       labels,
-      datasets: [{
-        label: "Equity (₹)",
-        data: dataPoints,
-        borderColor: "#10b981",
-        backgroundColor: "rgba(16,185,129,0.08)",
-        fill: true,
-        tension: 0.25,
-        pointRadius: 2,
-      }],
+      datasets: [
+        {
+          label: "Swing Equity (₹)",
+          data: swingSeries.map((p) => p.value),
+          borderColor: "#38bdf8",
+          backgroundColor: "rgba(56,189,248,0.08)",
+          fill: false, tension: 0.25, pointRadius: 2,
+        },
+        {
+          label: "Intraday Equity (₹)",
+          data: intradaySeries.map((p) => p.value),
+          borderColor: "#a855f7",
+          backgroundColor: "rgba(168,85,247,0.08)",
+          fill: false, tension: 0.25, pointRadius: 2,
+        },
+      ],
     },
     options: {
       responsive: true,
       maintainAspectRatio: false,
-      plugins: { legend: { display: false } },
+      plugins: { legend: { display: true, labels: { color: "#94a3b8", font: { size: 10 } } } },
       scales: {
         x: { ticks: { color: "#475569", maxTicksLimit: 8 }, grid: { color: "#131a29" } },
         y: { ticks: { color: "#475569" }, grid: { color: "#131a29" } },
