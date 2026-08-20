@@ -1,6 +1,6 @@
 {
   "swing": {
-    "last_scan_time": "2026-08-20T14:50:17.220331+05:30",
+    "last_scan_time": "2026-08-20T15:10:17.473386+05:30",
     "universe_size": 150,
     "evaluated": 149,
     "open_positions": 3,
@@ -9,69 +9,69 @@
       {
         "symbol": "DIXON",
         "score": 100,
-        "price": 14805.0,
-        "trend_up": true,
-        "breakout": true
-      },
-      {
-        "symbol": "PNBHOUSING",
-        "score": 100,
-        "price": 1179.5,
+        "price": 14828.0,
         "trend_up": true,
         "breakout": true
       },
       {
         "symbol": "MCX",
-        "score": 99,
-        "price": 3127.5,
+        "score": 100,
+        "price": 3116.9,
         "trend_up": true,
         "breakout": true
       },
       {
         "symbol": "ETERNAL",
-        "score": 92,
-        "price": 327.5,
+        "score": 94,
+        "price": 327.95,
         "trend_up": true,
         "breakout": true
       },
       {
         "symbol": "COFORGE",
-        "score": 90,
-        "price": 1880.5,
-        "trend_up": true,
-        "breakout": true
-      },
-      {
-        "symbol": "SAILIFE",
-        "score": 88,
-        "price": 1476.3,
+        "score": 92,
+        "price": 1876.8,
         "trend_up": true,
         "breakout": true
       },
       {
         "symbol": "AFFLE",
         "score": 81,
-        "price": 1726.0,
+        "price": 1727.8,
         "trend_up": true,
         "breakout": true
       },
       {
         "symbol": "JSWSTEEL",
         "score": 75,
-        "price": 1290.7,
+        "price": 1288.7,
         "trend_up": true,
         "breakout": false
+      },
+      {
+        "symbol": "AUBANK",
+        "score": 75,
+        "price": 1086.9,
+        "trend_up": true,
+        "breakout": false
+      },
+      {
+        "symbol": "COHANCE",
+        "score": 75,
+        "price": 475.05,
+        "trend_up": false,
+        "breakout": true
       }
     ]
   },
-  "last_updated": "2026-08-20T15:06:59.417564",
+  "last_updated": "2026-08-20T15:13:09.293575",
   "intraday": {
-    "last_scan_time": "2026-08-20T15:06:59.416359+05:30",
+    "last_scan_time": "2026-08-20T15:13:09.292245+05:30",
     "universe_size": 150,
     "evaluated": 150,
     "open_positions": 0,
     "cash": 50000,
-    "square_off_time": false,
+    "square_off_time": true,
     "top_candidates": []
   }
 }
