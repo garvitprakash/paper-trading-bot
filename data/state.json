@@ -1,1 +1,19 @@
-{"swing_cash": 50000, "intraday_cash": 50000, "positions": [], "history": []}
+{
+  "swing_cash": 45219.6,
+  "intraday_cash": 50000,
+  "positions": [
+    {
+      "id": "PNBHOUSING-1787198919.481685",
+      "type": "swing",
+      "symbol": "PNBHOUSING",
+      "name": "PNBHOUSING",
+      "qty": 4,
+      "entry": 1195.1,
+      "entry_date": "2026-08-20T09:38:39.481776",
+      "stop": 1147.2959999999998,
+      "target": 1302.659,
+      "peak": 1195.1
+    }
+  ],
+  "history": []
+}
