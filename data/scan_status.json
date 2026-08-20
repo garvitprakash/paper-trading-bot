@@ -1,0 +1,68 @@
+{
+  "swing": {
+    "last_scan_time": "2026-08-20T13:09:18.669844+05:30",
+    "universe_size": 150,
+    "evaluated": 149,
+    "open_positions": 3,
+    "cash": 36569.4,
+    "top_candidates": [
+      {
+        "symbol": "PNBHOUSING",
+        "score": 100,
+        "price": 1177.9,
+        "trend_up": true,
+        "breakout": true
+      },
+      {
+        "symbol": "DIXON",
+        "score": 94,
+        "price": 14747.0,
+        "trend_up": true,
+        "breakout": true
+      },
+      {
+        "symbol": "MCX",
+        "score": 94,
+        "price": 3119.3,
+        "trend_up": true,
+        "breakout": true
+      },
+      {
+        "symbol": "ETERNAL",
+        "score": 90,
+        "price": 327.15,
+        "trend_up": true,
+        "breakout": true
+      },
+      {
+        "symbol": "COFORGE",
+        "score": 88,
+        "price": 1867.9,
+        "trend_up": true,
+        "breakout": true
+      },
+      {
+        "symbol": "SAILIFE",
+        "score": 86,
+        "price": 1479.8,
+        "trend_up": true,
+        "breakout": true
+      },
+      {
+        "symbol": "AFFLE",
+        "score": 80,
+        "price": 1729.9,
+        "trend_up": true,
+        "breakout": true
+      },
+      {
+        "symbol": "JSWSTEEL",
+        "score": 75,
+        "price": 1296.2,
+        "trend_up": true,
+        "breakout": false
+      }
+    ]
+  },
+  "last_updated": "2026-08-20T13:09:18.670293"
+}
