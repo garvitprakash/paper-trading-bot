@@ -1,72 +1,72 @@
 {
   "swing": {
-    "last_scan_time": "2026-08-20T14:29:52.764395+05:30",
+    "last_scan_time": "2026-08-20T14:50:17.220331+05:30",
     "universe_size": 150,
     "evaluated": 149,
     "open_positions": 3,
     "cash": 36569.4,
     "top_candidates": [
       {
-        "symbol": "PNBHOUSING",
+        "symbol": "DIXON",
         "score": 100,
-        "price": 1179.3,
+        "price": 14805.0,
         "trend_up": true,
         "breakout": true
       },
       {
-        "symbol": "DIXON",
-        "score": 99,
-        "price": 14782.0,
+        "symbol": "PNBHOUSING",
+        "score": 100,
+        "price": 1179.5,
         "trend_up": true,
         "breakout": true
       },
       {
         "symbol": "MCX",
         "score": 99,
-        "price": 3125.8,
+        "price": 3127.5,
         "trend_up": true,
         "breakout": true
       },
       {
         "symbol": "ETERNAL",
         "score": 92,
-        "price": 327.95,
+        "price": 327.5,
         "trend_up": true,
         "breakout": true
       },
       {
         "symbol": "COFORGE",
-        "score": 89,
-        "price": 1880.2,
+        "score": 90,
+        "price": 1880.5,
         "trend_up": true,
         "breakout": true
       },
       {
         "symbol": "SAILIFE",
         "score": 88,
-        "price": 1480.0,
+        "price": 1476.3,
         "trend_up": true,
         "breakout": true
       },
       {
         "symbol": "AFFLE",
         "score": 81,
-        "price": 1733.8,
+        "price": 1726.0,
         "trend_up": true,
         "breakout": true
       },
       {
         "symbol": "JSWSTEEL",
         "score": 75,
-        "price": 1291.7,
+        "price": 1290.7,
         "trend_up": true,
         "breakout": false
       }
     ]
   },
-  "last_updated": "2026-08-20T14:41:55.126976",
+  "last_updated": "2026-08-20T14:50:17.221600",
   "intraday": {
-    "last_scan_time": "2026-08-20T14:41:55.125691+05:30",
+    "last_scan_time": "2026-08-20T14:45:51.923687+05:30",
     "universe_size": 150,
     "evaluated": 150,
     "open_positions": 0,
