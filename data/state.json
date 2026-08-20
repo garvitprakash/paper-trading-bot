@@ -1,5 +1,5 @@
 {
-  "swing_cash": 45219.6,
+  "swing_cash": 40311.6,
   "intraday_cash": 50000,
   "positions": [
     {
@@ -12,7 +12,19 @@
       "entry_date": "2026-08-20T09:38:39.481776",
       "stop": 1147.2959999999998,
       "target": 1302.659,
-      "peak": 1195.1
+      "peak": 1198.0
+    },
+    {
+      "id": "ETERNAL-1787200082.783016",
+      "type": "swing",
+      "symbol": "ETERNAL",
+      "name": "ETERNAL",
+      "qty": 15,
+      "entry": 327.2,
+      "entry_date": "2026-08-20T09:58:02.783106",
+      "stop": 314.11199999999997,
+      "target": 356.648,
+      "peak": 327.2
     }
   ],
   "history": []
