@@ -7,8 +7,12 @@ Dono independent hain — Swing ka scan lamba chale to bhi Intraday apne time
 pe chalta rahega. Dono ek hi state.json (portfolio) use karte hain, isliye
 portfolio.STATE_LOCK se protect kiya hai taaki data corrupt na ho.
 
-Har scan ke baad GitHub par bhi push ho jaata hai (dashboard live rahe) — push
-bhi lock ke andar hota hai taaki dono thread ek saath git push na karein.
+Har scan ke baad GitHub par push hota hai (dashboard live rahe):
+  - Trade (state.json) badla ho to HAMESHA turant push hota hai
+  - Sirf scan-status (scan_status.json, koi trade nahi hua) badla ho to
+    STATUS_PUSH_INTERVAL_SECONDS (config.py, default 5 min) me ek baar hi
+    push hota hai — taaki GitHub par bahut zyada pushes na ho jaayein
+    (Intraday har 1 min scan karta hai, har baar push karna zyada hoga)
 
 Chalane ka tarika: python3 tab_loop.py
 Rokne ka tarika: Ctrl + C
@@ -17,8 +21,8 @@ Rokne ka tarika: Ctrl + C
 import subprocess
 import threading
 import time
-from datetime import datetime
 
+import config
 import portfolio as pf
 from intraday_engine import scan_intraday
 from market_hours import market_open, now_ist
@@ -28,11 +32,33 @@ SWING_INTERVAL_MINUTES = 15
 INTRADAY_INTERVAL_MINUTES = 1
 
 GIT_LOCK = threading.Lock()  # git push bhi serialize karna hai
+_last_status_push = 0.0  # timestamp — status-only push ka throttle track karne ke liye
+
+
+def _has_diff(path):
+    """True agar is file me uncommitted changes hain (modified YA bilkul nayi/untracked)."""
+    result = subprocess.run(["git", "status", "--porcelain", "--", path], capture_output=True, text=True)
+    return bool(result.stdout.strip())
 
 
 def git_push():
+    global _last_status_push
     with GIT_LOCK:
         try:
+            state_changed = _has_diff("data/state.json")
+            status_changed = _has_diff("data/scan_status.json")
+
+            if not state_changed and not status_changed:
+                return  # kuch bhi naya nahi hai
+
+            now = time.time()
+            status_due = (now - _last_status_push) >= config.STATUS_PUSH_INTERVAL_SECONDS
+
+            # Agar sirf status badla hai (koi trade nahi) aur abhi throttle
+            # window poori nahi hui, to is baar push skip karo
+            if not state_changed and status_changed and not status_due:
+                return
+
             subprocess.run(["git", "add", "data/"], check=True)
             result = subprocess.run(["git", "diff", "--cached", "--quiet"])
             if result.returncode != 0:
@@ -41,6 +67,8 @@ def git_push():
                 subprocess.run(["git", "pull", "--rebase"], check=False)
                 subprocess.run(["git", "push"], check=True)
                 print("GitHub par push ho gaya.")
+                if status_changed:
+                    _last_status_push = now
         except Exception as e:
             print("Git push me error:", e)
 

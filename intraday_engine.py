@@ -8,8 +8,9 @@ import time
 
 import config
 import portfolio as pf
+import scan_status
 import yahoo_api
-from market_hours import square_off_time, today_str
+from market_hours import now_ist, square_off_time, today_str
 from notifier import (
     daily_loss_limit_message, intraday_pro_buy_message, partial_exit_message,
     sell_message, send_telegram, smart_exit_message, trail_update_message,
@@ -33,6 +34,25 @@ def scan_intraday(state):
     print(f"[Intraday] Universe: {len(symbols)} stocks")
 
     force_exit = square_off_time()
+
+    def save_status(candidates_list):
+        top = sorted(candidates_list, key=lambda x: -x["rr_available"])[:8]
+        scan_status.update_section("intraday", {
+            "last_scan_time": now_ist().isoformat(),
+            "universe_size": len(symbols),
+            "evaluated": len(candle_cache),
+            "open_positions": len(pf.open_positions(state, "intraday")),
+            "cash": state["intraday_cash"],
+            "square_off_time": force_exit,
+            "top_candidates": [
+                {
+                    "symbol": c["symbol"], "price": c["price"],
+                    "rr_available": c["rr_available"],
+                    "above_vwap": c["above_vwap"], "orb_breakout": c["orb_breakout"],
+                }
+                for c in top
+            ],
+        })
 
     candle_cache = {}
     for sym, cap_class in symbols:
@@ -97,6 +117,7 @@ def scan_intraday(state):
 
     if force_exit:
         print("[Intraday] Square-off time — naya trade nahi.")
+        save_status([])
         return
 
     loss_so_far = todays_intraday_realized_loss(state)
@@ -105,12 +126,14 @@ def scan_intraday(state):
         loss_pct = (loss_so_far / config.INTRADAY_CAPITAL) * 100
         print(f"[Intraday] Daily loss limit hit: -₹{loss_so_far:.0f} ({loss_pct:.1f}%).")
         send_telegram(daily_loss_limit_message(loss_pct))
+        save_status([])
         return
 
     open_count = len(pf.open_positions(state, "intraday"))
     slots = config.MAX_INTRADAY_POSITIONS - open_count
     if slots <= 0:
         print("[Intraday] Scan complete (max positions already open).")
+        save_status([])
         return
 
     candidates = []
@@ -155,3 +178,4 @@ def scan_intraday(state):
             slots -= 1
 
     print("[Intraday] Scan complete.")
+    save_status(candidates)

@@ -59,4 +59,10 @@ SCAN_DELAY_SECONDS = 0.4
 # zyada bataye — ye ek hard safety cap hai.
 MAX_TRADE_AMOUNT = 5000
 
+# Website par 'Live Scan Activity' dikhane ke liye — scan-status (jisme koi
+# trade nahi hua) ko GitHub par itni der me ek baar hi push karte hain (taaki
+# git par bahut zyada pushes na ho jaayein). Trade hone par ye rule lagu nahi
+# hota — wo hamesha turant push hota hai.
+STATUS_PUSH_INTERVAL_SECONDS = 300  # 5 minute
+
 DATA_DIR = "data"

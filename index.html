@@ -116,6 +116,24 @@
     </div>
   </div>
 
+  <div class="section-title">🔴 Live Scan Activity <span id="scanUpdatedNote" style="font-weight:400;color:#475569;font-size:11px;"></span></div>
+  <div class="summary-row">
+    <div class="summary-card swing">
+      <div class="heading"><span class="dot"></span><span class="label">Swing — Last Scan</span></div>
+      <div style="font-size:12px;color:#94a3b8;margin-bottom:10px;" id="swingScanMeta">Load ho raha hai...</div>
+      <table style="font-size:12px;"><thead><tr><th>Stock</th><th class="num">Score</th><th>Trend</th><th>Breakout</th></tr></thead>
+        <tbody id="swingCandidatesBody"></tbody>
+      </table>
+    </div>
+    <div class="summary-card intraday">
+      <div class="heading"><span class="dot"></span><span class="label">Intraday — Last Scan</span></div>
+      <div style="font-size:12px;color:#94a3b8;margin-bottom:10px;" id="intradayScanMeta">Load ho raha hai...</div>
+      <table style="font-size:12px;"><thead><tr><th>Stock</th><th class="num">R:R</th><th>VWAP</th><th>ORB</th></tr></thead>
+        <tbody id="intradayCandidatesBody"></tbody>
+      </table>
+    </div>
+  </div>
+
   <div class="section-title">Equity Curve (Realized P&L over time)</div>
   <div class="chart-wrap"><canvas id="equityChart"></canvas></div>
 
@@ -174,7 +192,77 @@ async function loadData() {
   } catch (e) {
     document.getElementById("lastUpdated").textContent = "Data load nahi ho paya — bot ne pehla scan abhi complete nahi kiya hoga";
   }
+
+  try {
+    const res2 = await fetch("data/scan_status.json?t=" + Date.now());
+    if (!res2.ok) throw new Error("scan_status.json nahi mila");
+    const status = await res2.json();
+    renderScanStatus(status);
+  } catch (e) {
+    document.getElementById("scanUpdatedNote").textContent = "(abhi tak koi scan status nahi mila)";
+  }
 }
+
+function timeAgoLabel(iso) {
+  if (!iso) return "-";
+  const d = new Date(iso);
+  const mins = Math.round((Date.now() - d.getTime()) / 60000);
+  const timeStr = d.toLocaleTimeString("en-IN", { hour: "2-digit", minute: "2-digit" });
+  if (mins < 1) return `${timeStr} (abhi)`;
+  if (mins < 60) return `${timeStr} (${mins} min pehle)`;
+  return timeStr;
+}
+
+function renderScanStatus(status) {
+  if (status.last_updated) {
+    document.getElementById("scanUpdatedNote").textContent =
+      "— status har ~5 min me refresh hota hai • last: " + timeAgoLabel(status.last_updated);
+  }
+
+  const sw = status.swing;
+  if (sw) {
+    document.getElementById("swingScanMeta").textContent =
+      `${sw.evaluated}/${sw.universe_size} stocks scan hue • ${timeAgoLabel(sw.last_scan_time)} • ${sw.open_positions} open positions`;
+    const body = document.getElementById("swingCandidatesBody");
+    body.innerHTML = "";
+    if (!sw.top_candidates || sw.top_candidates.length === 0) {
+      body.innerHTML = '<tr><td colspan="4" class="empty" style="padding:14px;">Koi strong candidate nahi mila</td></tr>';
+    } else {
+      sw.top_candidates.forEach((c) => {
+        const scoreColor = c.score >= 80 ? "#34d399" : "#94a3b8";
+        body.innerHTML += `<tr>
+          <td>${c.symbol}</td>
+          <td class="num" style="color:${scoreColor}">${c.score}/100</td>
+          <td>${c.trend_up ? "✅" : "—"}</td>
+          <td>${c.breakout ? "✅" : "—"}</td>
+        </tr>`;
+      });
+    }
+  }
+
+  const id = status.intraday;
+  if (id) {
+    const eodNote = id.square_off_time ? " • Square-off time" : "";
+    document.getElementById("intradayScanMeta").textContent =
+      `${id.evaluated}/${id.universe_size} stocks scan hue • ${timeAgoLabel(id.last_scan_time)} • ${id.open_positions} open positions${eodNote}`;
+    const body = document.getElementById("intradayCandidatesBody");
+    body.innerHTML = "";
+    if (!id.top_candidates || id.top_candidates.length === 0) {
+      body.innerHTML = '<tr><td colspan="4" class="empty" style="padding:14px;">Koi strong candidate nahi mila</td></tr>';
+    } else {
+      id.top_candidates.forEach((c) => {
+        const rrColor = c.rr_available >= config_min_rr ? "#34d399" : "#94a3b8";
+        body.innerHTML += `<tr>
+          <td>${c.symbol}</td>
+          <td class="num" style="color:${rrColor}">1:${c.rr_available?.toFixed(1)}</td>
+          <td>${c.above_vwap ? "✅" : "—"}</td>
+          <td>${c.orb_breakout ? "✅" : "—"}</td>
+        </tr>`;
+      });
+    }
+  }
+}
+const config_min_rr = 3.0; // sirf display-highlight ke liye (Intraday PRO ka min R:R)
 
 function computeTypeSummary(state, type) {
   const cashKey = type + "_cash";

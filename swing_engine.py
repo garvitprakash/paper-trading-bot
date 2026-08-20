@@ -6,10 +6,13 @@ karta hai.
 """
 
 import time
+from datetime import datetime
 
 import config
 import portfolio as pf
+import scan_status
 import yahoo_api
+from market_hours import now_ist
 from notifier import buy_message, sell_message, send_telegram
 from strategy import swing_score
 from universe import build_universe
@@ -83,3 +86,20 @@ def scan_swing(state):
                 slots -= 1
 
     print("[Swing] Scan complete.")
+
+    # Website ke 'Live Scan Activity' section ke liye status save karo
+    top_candidates = sorted(results, key=lambda x: -x["score"])[:8]
+    scan_status.update_section("swing", {
+        "last_scan_time": now_ist().isoformat(),
+        "universe_size": len(symbols),
+        "evaluated": len(results),
+        "open_positions": len(pf.open_positions(state, "swing")),
+        "cash": state["swing_cash"],
+        "top_candidates": [
+            {
+                "symbol": r["symbol"], "score": r["score"], "price": r["price"],
+                "trend_up": r["trend_up"], "breakout": r["breakout"],
+            }
+            for r in top_candidates
+        ],
+    })
