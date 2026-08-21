@@ -1,6 +1,6 @@
 {
   "swing": {
-    "last_scan_time": "2026-08-21T11:11:11.210592+05:30",
+    "last_scan_time": "2026-08-21T11:30:44.639626+05:30",
     "universe_size": 150,
     "evaluated": 149,
     "open_positions": 3,
@@ -8,65 +8,65 @@
     "top_candidates": [
       {
         "symbol": "MCX",
-        "score": 87,
-        "price": 3197.0,
+        "score": 88,
+        "price": 3198.8,
         "trend_up": true,
         "breakout": true
       },
       {
         "symbol": "IIFL",
         "score": 86,
-        "price": 679.55,
+        "price": 678.95,
         "trend_up": true,
         "breakout": true
       },
       {
         "symbol": "PNBHOUSING",
-        "score": 79,
-        "price": 1182.3,
+        "score": 80,
+        "price": 1180.0,
         "trend_up": true,
         "breakout": true
       },
       {
         "symbol": "AFFLE",
         "score": 76,
-        "price": 1729.0,
-        "trend_up": true,
-        "breakout": true
-      },
-      {
-        "symbol": "WELCORP",
-        "score": 75,
-        "price": 2295.5,
+        "price": 1724.6,
         "trend_up": true,
         "breakout": true
       },
       {
         "symbol": "CDSL",
-        "score": 73,
-        "price": 1378.9,
+        "score": 75,
+        "price": 1378.4,
         "trend_up": false,
         "breakout": true
       },
       {
+        "symbol": "WELCORP",
+        "score": 75,
+        "price": 2328.5,
+        "trend_up": true,
+        "breakout": true
+      },
+      {
         "symbol": "KFINTECH",
-        "score": 70,
-        "price": 983.0,
+        "score": 71,
+        "price": 983.55,
         "trend_up": false,
         "breakout": true
       },
       {
         "symbol": "DIXON",
-        "score": 64,
-        "price": 14773.0,
+        "score": 68,
+        "price": 14632.0,
         "trend_up": true,
         "breakout": false
       }
     ]
   },
-  "last_updated": "2026-08-21T11:27:09.323740",
+  "last_updated": "2026-08-21T11:34:04.131538",
   "intraday": {
-    "last_scan_time": "2026-08-21T11:27:09.322557+05:30",
+    "last_scan_time": "2026-08-21T11:34:04.130361+05:30",
     "universe_size": 150,
     "evaluated": 150,
     "open_positions": 0,
