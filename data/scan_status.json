@@ -1,6 +1,6 @@
 {
   "swing": {
-    "last_scan_time": "2026-08-21T14:26:32.808773+05:30",
+    "last_scan_time": "2026-08-21T14:46:16.491020+05:30",
     "universe_size": 150,
     "evaluated": 149,
     "open_positions": 3,
@@ -8,65 +8,65 @@
     "top_candidates": [
       {
         "symbol": "MCX",
-        "score": 94,
-        "price": 3176.5,
+        "score": 95,
+        "price": 3175.1,
         "trend_up": true,
         "breakout": true
       },
       {
         "symbol": "LT",
         "score": 86,
-        "price": 4098.4,
+        "price": 4090.5,
         "trend_up": true,
         "breakout": true
       },
       {
         "symbol": "IIFL",
         "score": 86,
-        "price": 678.95,
+        "price": 677.0,
         "trend_up": true,
         "breakout": true
       },
       {
         "symbol": "CDSL",
         "score": 75,
-        "price": 1383.3,
+        "price": 1380.7,
         "trend_up": false,
         "breakout": true
       },
       {
         "symbol": "WELCORP",
         "score": 75,
-        "price": 2305.0,
+        "price": 2286.7,
         "trend_up": true,
         "breakout": true
       },
       {
         "symbol": "DIXON",
-        "score": 73,
-        "price": 14816.0,
+        "score": 74,
+        "price": 14879.0,
         "trend_up": true,
         "breakout": false
       },
       {
         "symbol": "KOTAKBANK",
-        "score": 72,
-        "price": 402.1,
+        "score": 73,
+        "price": 402.4,
         "trend_up": false,
         "breakout": true
       },
       {
         "symbol": "MANAPPURAM",
-        "score": 70,
-        "price": 356.5,
+        "score": 71,
+        "price": 356.75,
         "trend_up": true,
         "breakout": false
       }
     ]
   },
-  "last_updated": "2026-08-21T14:38:56.191329",
+  "last_updated": "2026-08-21T14:46:16.492566",
   "intraday": {
-    "last_scan_time": "2026-08-21T14:38:56.190148+05:30",
+    "last_scan_time": "2026-08-21T14:42:57.364097+05:30",
     "universe_size": 150,
     "evaluated": 150,
     "open_positions": 0,
