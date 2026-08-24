@@ -1,6 +1,6 @@
 {
   "swing": {
-    "last_scan_time": "2026-08-24T12:21:15.696127+05:30",
+    "last_scan_time": "2026-08-24T12:39:37.909268+05:30",
     "universe_size": 150,
     "evaluated": 149,
     "open_positions": 3,
@@ -8,65 +8,65 @@
     "top_candidates": [
       {
         "symbol": "MCX",
-        "score": 83,
-        "price": 3283.9,
+        "score": 85,
+        "price": 3277.0,
         "trend_up": true,
         "breakout": true
       },
       {
         "symbol": "AUBANK",
-        "score": 81,
-        "price": 1108.7,
+        "score": 82,
+        "price": 1110.5,
         "trend_up": true,
         "breakout": true
       },
       {
         "symbol": "REDINGTON",
         "score": 80,
-        "price": 365.4,
+        "price": 366.2,
         "trend_up": true,
         "breakout": true
       },
       {
         "symbol": "WELCORP",
         "score": 75,
-        "price": 2374.0,
+        "price": 2390.3,
         "trend_up": true,
         "breakout": true
       },
       {
         "symbol": "DIXON",
-        "score": 73,
-        "price": 14561.0,
+        "score": 74,
+        "price": 14563.0,
         "trend_up": true,
         "breakout": false
       },
       {
         "symbol": "IIFL",
-        "score": 69,
-        "price": 702.0,
+        "score": 70,
+        "price": 702.15,
         "trend_up": true,
         "breakout": true
       },
       {
         "symbol": "MANAPPURAM",
         "score": 68,
-        "price": 366.2,
+        "price": 366.3,
         "trend_up": true,
         "breakout": false
       },
       {
         "symbol": "JSWSTEEL",
         "score": 65,
-        "price": 1311.6,
+        "price": 1311.8,
         "trend_up": true,
         "breakout": false
       }
     ]
   },
-  "last_updated": "2026-08-24T12:33:35.993443",
+  "last_updated": "2026-08-24T12:39:37.910512",
   "intraday": {
-    "last_scan_time": "2026-08-24T12:33:35.992259+05:30",
+    "last_scan_time": "2026-08-24T12:36:58.817268+05:30",
     "universe_size": 150,
     "evaluated": 150,
     "open_positions": 0,
