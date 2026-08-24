@@ -1,6 +1,6 @@
 {
   "swing": {
-    "last_scan_time": "2026-08-24T10:15:18.193211+05:30",
+    "last_scan_time": "2026-08-24T10:33:02.941559+05:30",
     "universe_size": 150,
     "evaluated": 149,
     "open_positions": 3,
@@ -8,65 +8,65 @@
     "top_candidates": [
       {
         "symbol": "MCX",
-        "score": 80,
-        "price": 3232.9,
-        "trend_up": true,
-        "breakout": true
-      },
-      {
-        "symbol": "AUBANK",
-        "score": 77,
-        "price": 1110.0,
+        "score": 81,
+        "price": 3231.7,
         "trend_up": true,
         "breakout": true
       },
       {
         "symbol": "BANDHANBNK",
-        "score": 75,
-        "price": 179.43,
+        "score": 79,
+        "price": 179.95,
         "trend_up": true,
         "breakout": true
       },
       {
         "symbol": "WELCORP",
-        "score": 72,
-        "price": 2365.0,
+        "score": 75,
+        "price": 2392.0,
         "trend_up": true,
         "breakout": true
       },
       {
         "symbol": "DIXON",
-        "score": 68,
-        "price": 14570.0,
+        "score": 69,
+        "price": 14554.0,
         "trend_up": true,
         "breakout": false
       },
       {
+        "symbol": "CDSL",
+        "score": 65,
+        "price": 1402.8,
+        "trend_up": false,
+        "breakout": true
+      },
+      {
         "symbol": "MANAPPURAM",
-        "score": 63,
-        "price": 366.9,
+        "score": 65,
+        "price": 366.0,
         "trend_up": true,
         "breakout": false
       },
       {
         "symbol": "IIFL",
         "score": 62,
-        "price": 694.05,
+        "price": 694.95,
         "trend_up": true,
         "breakout": true
       },
       {
-        "symbol": "HINDCOPPER",
+        "symbol": "JSWSTEEL",
         "score": 56,
-        "price": 570.5,
+        "price": 1307.4,
         "trend_up": true,
         "breakout": false
       }
     ]
   },
-  "last_updated": "2026-08-24T10:27:15.319162",
+  "last_updated": "2026-08-24T10:33:02.943230",
   "intraday": {
-    "last_scan_time": "2026-08-24T10:27:15.317887+05:30",
+    "last_scan_time": "2026-08-24T10:30:17.686770+05:30",
     "universe_size": 150,
     "evaluated": 150,
     "open_positions": 0,
