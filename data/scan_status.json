@@ -1,72 +1,72 @@
 {
   "swing": {
-    "last_scan_time": "2026-08-24T09:39:37.120200+05:30",
+    "last_scan_time": "2026-08-24T09:57:59.421776+05:30",
     "universe_size": 150,
     "evaluated": 149,
     "open_positions": 3,
     "cash": 36569.4,
     "top_candidates": [
       {
-        "symbol": "POLICYBZR",
-        "score": 74,
-        "price": 1804.2,
+        "symbol": "MCX",
+        "score": 79,
+        "price": 3232.8,
         "trend_up": true,
         "breakout": true
       },
       {
-        "symbol": "IIFL",
-        "score": 65,
-        "price": 691.45,
+        "symbol": "REDINGTON",
+        "score": 75,
+        "price": 365.6,
+        "trend_up": true,
+        "breakout": true
+      },
+      {
+        "symbol": "BANDHANBNK",
+        "score": 68,
+        "price": 178.41,
+        "trend_up": true,
+        "breakout": true
+      },
+      {
+        "symbol": "WELCORP",
+        "score": 67,
+        "price": 2363.5,
         "trend_up": true,
         "breakout": true
       },
       {
         "symbol": "DIXON",
-        "score": 62,
-        "price": 14510.0,
+        "score": 66,
+        "price": 14530.0,
         "trend_up": true,
         "breakout": false
       },
       {
         "symbol": "CDSL",
-        "score": 60,
-        "price": 1406.0,
+        "score": 62,
+        "price": 1405.4,
         "trend_up": false,
         "breakout": true
       },
       {
-        "symbol": "HINDCOPPER",
-        "score": 54,
-        "price": 568.9,
+        "symbol": "IIFL",
+        "score": 60,
+        "price": 695.2,
         "trend_up": true,
-        "breakout": false
+        "breakout": true
       },
       {
         "symbol": "MANAPPURAM",
-        "score": 54,
-        "price": 360.0,
-        "trend_up": true,
-        "breakout": false
-      },
-      {
-        "symbol": "AEGISLOG",
-        "score": 53,
-        "price": 1418.9,
-        "trend_up": true,
-        "breakout": false
-      },
-      {
-        "symbol": "POONAWALLA",
-        "score": 53,
-        "price": 488.85,
+        "score": 59,
+        "price": 367.0,
         "trend_up": true,
         "breakout": false
       }
     ]
   },
-  "last_updated": "2026-08-24T09:55:44.977286",
+  "last_updated": "2026-08-24T10:02:57.095391",
   "intraday": {
-    "last_scan_time": "2026-08-24T09:55:44.976187+05:30",
+    "last_scan_time": "2026-08-24T10:02:57.094165+05:30",
     "universe_size": 150,
     "evaluated": 150,
     "open_positions": 0,
