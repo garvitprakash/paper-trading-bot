@@ -1,6 +1,6 @@
 {
   "swing": {
-    "last_scan_time": "2026-08-25T14:09:59.218387+05:30",
+    "last_scan_time": "2026-08-25T14:27:40.305342+05:30",
     "universe_size": 150,
     "evaluated": 149,
     "open_positions": 3,
@@ -9,28 +9,35 @@
       {
         "symbol": "AUBANK",
         "score": 100,
-        "price": 1135.8,
+        "price": 1133.7,
         "trend_up": true,
         "breakout": true
       },
       {
         "symbol": "PAYTM",
-        "score": 85,
-        "price": 1699.7,
+        "score": 88,
+        "price": 1702.1,
         "trend_up": true,
         "breakout": true
       },
       {
         "symbol": "IIFL",
         "score": 75,
-        "price": 670.25,
+        "price": 670.4,
         "trend_up": true,
         "breakout": false
       },
       {
         "symbol": "LAURUSLABS",
+        "score": 74,
+        "price": 1858.0,
+        "trend_up": true,
+        "breakout": false
+      },
+      {
+        "symbol": "ADANIENT",
         "score": 73,
-        "price": 1859.7,
+        "price": 3065.0,
         "trend_up": true,
         "breakout": false
       },
@@ -42,31 +49,24 @@
         "breakout": false
       },
       {
-        "symbol": "ADANIENT",
-        "score": 72,
-        "price": 3058.0,
-        "trend_up": true,
-        "breakout": false
-      },
-      {
         "symbol": "HINDCOPPER",
         "score": 67,
-        "price": 533.3,
+        "price": 533.25,
         "trend_up": true,
         "breakout": false
       },
       {
-        "symbol": "POLICYBZR",
+        "symbol": "DIXON",
         "score": 65,
-        "price": 1794.3,
+        "price": 14708.0,
         "trend_up": true,
         "breakout": false
       }
     ]
   },
-  "last_updated": "2026-08-25T14:21:55.009900",
+  "last_updated": "2026-08-25T14:27:40.306625",
   "intraday": {
-    "last_scan_time": "2026-08-25T14:21:55.008660+05:30",
+    "last_scan_time": "2026-08-25T14:25:21.798894+05:30",
     "universe_size": 150,
     "evaluated": 150,
     "open_positions": 0,
