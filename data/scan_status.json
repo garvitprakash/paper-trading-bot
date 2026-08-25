@@ -1,72 +1,72 @@
 {
   "swing": {
-    "last_scan_time": "2026-08-25T15:04:01.814459+05:30",
+    "last_scan_time": "2026-08-25T15:22:21.754247+05:30",
     "universe_size": 150,
     "evaluated": 149,
     "open_positions": 3,
     "cash": 36569.4,
     "top_candidates": [
       {
+        "symbol": "ADANIENT",
+        "score": 100,
+        "price": 3094.2,
+        "trend_up": true,
+        "breakout": true
+      },
+      {
         "symbol": "AUBANK",
         "score": 100,
-        "price": 1135.7,
+        "price": 1133.9,
         "trend_up": true,
         "breakout": true
       },
       {
         "symbol": "PAYTM",
         "score": 89,
-        "price": 1701.1,
+        "price": 1708.5,
         "trend_up": true,
         "breakout": true
       },
       {
         "symbol": "LT",
-        "score": 87,
-        "price": 4113.9,
+        "score": 88,
+        "price": 4116.2,
         "trend_up": true,
         "breakout": true
       },
       {
         "symbol": "BAJAJ-AUTO",
-        "score": 84,
-        "price": 11904.0,
+        "score": 85,
+        "price": 11900.0,
         "trend_up": true,
         "breakout": true
       },
       {
-        "symbol": "ADANIENT",
+        "symbol": "GRASIM",
         "score": 75,
-        "price": 3090.5,
+        "price": 3300.0,
         "trend_up": true,
         "breakout": false
       },
       {
         "symbol": "LAURUSLABS",
         "score": 75,
-        "price": 1865.5,
+        "price": 1862.1,
         "trend_up": true,
         "breakout": false
       },
       {
         "symbol": "IIFL",
         "score": 75,
-        "price": 670.15,
-        "trend_up": true,
-        "breakout": false
-      },
-      {
-        "symbol": "KARURVYSYA",
-        "score": 75,
-        "price": 346.35,
+        "price": 661.8,
         "trend_up": true,
         "breakout": false
       }
     ]
   },
-  "last_updated": "2026-08-25T15:16:48.302925",
+  "last_updated": "2026-08-25T15:22:21.755504",
   "intraday": {
-    "last_scan_time": "2026-08-25T15:16:48.301699+05:30",
+    "last_scan_time": "2026-08-25T15:20:07.383944+05:30",
     "universe_size": 150,
     "evaluated": 150,
     "open_positions": 0,
