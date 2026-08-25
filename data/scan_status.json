@@ -1,70 +1,70 @@
 {
   "swing": {
-    "last_scan_time": "2026-08-25T10:59:33.431456+05:30",
+    "last_scan_time": "2026-08-25T13:52:12.554293+05:30",
     "universe_size": 150,
-    "evaluated": 149,
+    "evaluated": 148,
     "open_positions": 3,
     "cash": 36569.4,
     "top_candidates": [
       {
         "symbol": "AUBANK",
-        "score": 92,
-        "price": 1135.0,
+        "score": 100,
+        "price": 1131.3,
+        "trend_up": true,
+        "breakout": true
+      },
+      {
+        "symbol": "PAYTM",
+        "score": 83,
+        "price": 1684.0,
         "trend_up": true,
         "breakout": true
       },
       {
         "symbol": "IIFL",
         "score": 75,
-        "price": 675.85,
-        "trend_up": true,
-        "breakout": false
-      },
-      {
-        "symbol": "HINDCOPPER",
-        "score": 68,
-        "price": 536.1,
+        "price": 670.05,
         "trend_up": true,
         "breakout": false
       },
       {
         "symbol": "KARURVYSYA",
-        "score": 63,
-        "price": 346.1,
+        "score": 72,
+        "price": 347.1,
         "trend_up": true,
         "breakout": false
-      },
-      {
-        "symbol": "MFSL",
-        "score": 57,
-        "price": 1590.2,
-        "trend_up": false,
-        "breakout": true
       },
       {
         "symbol": "LAURUSLABS",
-        "score": 55,
-        "price": 1812.6,
+        "score": 70,
+        "price": 1855.5,
         "trend_up": true,
         "breakout": false
       },
       {
-        "symbol": "ANANDRATHI",
-        "score": 54,
-        "price": 2156.2,
+        "symbol": "HINDCOPPER",
+        "score": 66,
+        "price": 531.7,
         "trend_up": true,
         "breakout": false
       },
       {
-        "symbol": "MANAPPURAM",
-        "score": 54,
-        "price": 368.4,
+        "symbol": "POLICYBZR",
+        "score": 65,
+        "price": 1792.0,
+        "trend_up": true,
+        "breakout": false
+      },
+      {
+        "symbol": "ETERNAL",
+        "score": 61,
+        "price": 329.05,
         "trend_up": true,
         "breakout": false
       }
     ]
   },
-  "last_updated": "2026-08-25T12:40:04.631029",
+  "last_updated": "2026-08-25T13:52:12.555557",
   "intraday": {
     "last_scan_time": "2026-08-25T12:40:04.629703+05:30",
     "universe_size": 150,
