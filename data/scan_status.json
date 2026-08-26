@@ -1,6 +1,6 @@
 {
   "swing": {
-    "last_scan_time": "2026-08-26T13:22:38.787225+05:30",
+    "last_scan_time": "2026-08-26T13:40:45.425025+05:30",
     "universe_size": 150,
     "evaluated": 149,
     "open_positions": 3,
@@ -9,64 +9,64 @@
       {
         "symbol": "ADANIENT",
         "score": 99,
-        "price": 3131.9,
+        "price": 3133.8,
         "trend_up": true,
         "breakout": true
       },
       {
         "symbol": "KARURVYSYA",
-        "score": 97,
-        "price": 356.25,
+        "score": 98,
+        "price": 356.7,
         "trend_up": true,
         "breakout": true
       },
       {
         "symbol": "LAURUSLABS",
-        "score": 92,
-        "price": 1894.5,
+        "score": 93,
+        "price": 1893.5,
         "trend_up": true,
         "breakout": true
       },
       {
         "symbol": "POLICYBZR",
-        "score": 88,
-        "price": 1859.0,
+        "score": 89,
+        "price": 1860.0,
         "trend_up": true,
         "breakout": true
       },
       {
         "symbol": "NMDC",
-        "score": 83,
-        "price": 87.39,
+        "score": 84,
+        "price": 87.57,
         "trend_up": true,
         "breakout": true
       },
       {
         "symbol": "MCX",
         "score": 77,
-        "price": 3313.9,
+        "price": 3317.9,
         "trend_up": true,
         "breakout": true
       },
       {
         "symbol": "CDSL",
         "score": 75,
-        "price": 1434.0,
+        "price": 1431.5,
         "trend_up": false,
         "breakout": true
       },
       {
         "symbol": "HINDCOPPER",
         "score": 75,
-        "price": 552.5,
+        "price": 553.3,
         "trend_up": true,
         "breakout": false
       }
     ]
   },
-  "last_updated": "2026-08-26T13:33:29.662148",
+  "last_updated": "2026-08-26T13:40:45.426515",
   "intraday": {
-    "last_scan_time": "2026-08-26T13:33:29.660887+05:30",
+    "last_scan_time": "2026-08-26T13:37:36.023157+05:30",
     "universe_size": 150,
     "evaluated": 150,
     "open_positions": 0,
