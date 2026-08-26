@@ -1,6 +1,6 @@
 {
   "swing": {
-    "last_scan_time": "2026-08-26T10:17:43.958545+05:30",
+    "last_scan_time": "2026-08-26T10:35:00.684398+05:30",
     "universe_size": 150,
     "evaluated": 149,
     "open_positions": 3,
@@ -8,65 +8,65 @@
     "top_candidates": [
       {
         "symbol": "ADANIENT",
-        "score": 87,
-        "price": 3138.0,
+        "score": 89,
+        "price": 3130.1,
         "trend_up": true,
         "breakout": true
       },
       {
         "symbol": "LAURUSLABS",
-        "score": 83,
-        "price": 1885.4,
+        "score": 84,
+        "price": 1888.1,
+        "trend_up": true,
+        "breakout": true
+      },
+      {
+        "symbol": "POLICYBZR",
+        "score": 78,
+        "price": 1857.7,
         "trend_up": true,
         "breakout": true
       },
       {
         "symbol": "COFORGE",
-        "score": 75,
-        "price": 1915.0,
+        "score": 76,
+        "price": 1909.3,
         "trend_up": true,
         "breakout": true
       },
       {
         "symbol": "HINDCOPPER",
-        "score": 75,
-        "price": 549.55,
+        "score": 72,
+        "price": 543.6,
         "trend_up": true,
         "breakout": false
       },
       {
-        "symbol": "POLICYBZR",
-        "score": 74,
-        "price": 1866.6,
+        "symbol": "WELCORP",
+        "score": 69,
+        "price": 2233.1,
         "trend_up": true,
-        "breakout": true
+        "breakout": false
       },
       {
         "symbol": "PAYTM",
         "score": 68,
-        "price": 1726.0,
+        "price": 1726.8,
         "trend_up": true,
         "breakout": true
       },
       {
         "symbol": "CDSL",
-        "score": 61,
-        "price": 1417.3,
+        "score": 65,
+        "price": 1423.8,
         "trend_up": false,
         "breakout": true
-      },
-      {
-        "symbol": "WELCORP",
-        "score": 61,
-        "price": 2258.4,
-        "trend_up": true,
-        "breakout": false
       }
     ]
   },
-  "last_updated": "2026-08-26T10:29:38.279076",
+  "last_updated": "2026-08-26T10:35:00.685911",
   "intraday": {
-    "last_scan_time": "2026-08-26T10:29:38.277876+05:30",
+    "last_scan_time": "2026-08-26T10:32:37.951275+05:30",
     "universe_size": 150,
     "evaluated": 150,
     "open_positions": 0,
