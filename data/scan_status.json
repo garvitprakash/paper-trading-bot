@@ -1,6 +1,6 @@
 {
   "swing": {
-    "last_scan_time": "2026-08-27T14:26:43.559626+05:30",
+    "last_scan_time": "2026-08-27T14:44:41.588958+05:30",
     "universe_size": 150,
     "evaluated": 149,
     "open_positions": 3,
@@ -9,64 +9,64 @@
       {
         "symbol": "AMBER",
         "score": 100,
-        "price": 7717.0,
+        "price": 7706.0,
         "trend_up": true,
         "breakout": true
       },
       {
         "symbol": "LAURUSLABS",
         "score": 95,
-        "price": 1915.4,
-        "trend_up": true,
-        "breakout": true
-      },
-      {
-        "symbol": "TITAN",
-        "score": 88,
-        "price": 5173.6,
+        "price": 1914.5,
         "trend_up": true,
         "breakout": true
       },
       {
         "symbol": "SAILIFE",
         "score": 86,
-        "price": 1494.5,
+        "price": 1493.8,
         "trend_up": true,
         "breakout": true
       },
       {
         "symbol": "CUB",
         "score": 84,
-        "price": 228.24,
+        "price": 228.49,
         "trend_up": true,
         "breakout": true
       },
       {
         "symbol": "APLAPOLLO",
         "score": 79,
-        "price": 2183.3,
+        "price": 2185.5,
         "trend_up": true,
         "breakout": true
       },
       {
         "symbol": "BHEL",
         "score": 75,
-        "price": 433.2,
+        "price": 432.65,
         "trend_up": true,
         "breakout": false
       },
       {
         "symbol": "WOCKPHARMA",
         "score": 75,
-        "price": 1977.0,
+        "price": 1967.2,
+        "trend_up": true,
+        "breakout": false
+      },
+      {
+        "symbol": "GODREJPROP",
+        "score": 72,
+        "price": 2063.9,
         "trend_up": true,
         "breakout": false
       }
     ]
   },
-  "last_updated": "2026-08-27T14:37:04.707455",
+  "last_updated": "2026-08-27T14:44:41.590211",
   "intraday": {
-    "last_scan_time": "2026-08-27T14:37:04.706280+05:30",
+    "last_scan_time": "2026-08-27T14:41:03.460961+05:30",
     "universe_size": 150,
     "evaluated": 150,
     "open_positions": 0,
