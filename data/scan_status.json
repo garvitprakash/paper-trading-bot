@@ -1,6 +1,6 @@
 {
   "swing": {
-    "last_scan_time": "2026-08-27T09:42:18.948052+05:30",
+    "last_scan_time": "2026-08-27T10:02:07.262305+05:30",
     "universe_size": 150,
     "evaluated": 149,
     "open_positions": 3,
@@ -8,65 +8,65 @@
     "top_candidates": [
       {
         "symbol": "AMBER",
-        "score": 83,
-        "price": 7735.0,
+        "score": 88,
+        "price": 7682.5,
         "trend_up": true,
         "breakout": true
       },
       {
-        "symbol": "JSWSTEEL",
-        "score": 80,
-        "price": 1341.1,
+        "symbol": "LAURUSLABS",
+        "score": 78,
+        "price": 1898.4,
         "trend_up": true,
         "breakout": true
       },
       {
         "symbol": "POLICYBZR",
-        "score": 70,
-        "price": 1841.8,
+        "score": 73,
+        "price": 1825.8,
         "trend_up": true,
         "breakout": true
       },
       {
         "symbol": "APLAPOLLO",
-        "score": 58,
-        "price": 2221.1,
+        "score": 60,
+        "price": 2205.4,
         "trend_up": true,
         "breakout": true
       },
       {
         "symbol": "BHEL",
-        "score": 55,
-        "price": 427.45,
+        "score": 58,
+        "price": 425.35,
         "trend_up": true,
         "breakout": false
+      },
+      {
+        "symbol": "JSWSTEEL",
+        "score": 57,
+        "price": 1338.3,
+        "trend_up": true,
+        "breakout": false
+      },
+      {
+        "symbol": "KOTAKBANK",
+        "score": 57,
+        "price": 426.05,
+        "trend_up": false,
+        "breakout": true
       },
       {
         "symbol": "HINDCOPPER",
-        "score": 55,
-        "price": 543.75,
-        "trend_up": true,
-        "breakout": false
-      },
-      {
-        "symbol": "TATASTEEL",
-        "score": 54,
-        "price": 189.61,
-        "trend_up": true,
-        "breakout": false
-      },
-      {
-        "symbol": "NMDC",
-        "score": 54,
-        "price": 88.11,
+        "score": 56,
+        "price": 542.15,
         "trend_up": true,
         "breakout": false
       }
     ]
   },
-  "last_updated": "2026-08-27T09:59:15.626845",
+  "last_updated": "2026-08-27T10:04:54.343182",
   "intraday": {
-    "last_scan_time": "2026-08-27T09:59:15.625728+05:30",
+    "last_scan_time": "2026-08-27T10:04:54.342014+05:30",
     "universe_size": 150,
     "evaluated": 150,
     "open_positions": 0,
