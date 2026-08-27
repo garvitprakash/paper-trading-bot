@@ -1,6 +1,6 @@
 {
   "swing": {
-    "last_scan_time": "2026-08-27T14:08:39.757251+05:30",
+    "last_scan_time": "2026-08-27T14:26:43.559626+05:30",
     "universe_size": 150,
     "evaluated": 149,
     "open_positions": 3,
@@ -9,64 +9,64 @@
       {
         "symbol": "AMBER",
         "score": 100,
-        "price": 7732.5,
+        "price": 7717.0,
         "trend_up": true,
         "breakout": true
       },
       {
         "symbol": "LAURUSLABS",
         "score": 95,
-        "price": 1913.6,
+        "price": 1915.4,
         "trend_up": true,
         "breakout": true
       },
       {
         "symbol": "TITAN",
         "score": 88,
-        "price": 5170.7,
+        "price": 5173.6,
         "trend_up": true,
         "breakout": true
       },
       {
         "symbol": "SAILIFE",
         "score": 86,
-        "price": 1496.3,
+        "price": 1494.5,
         "trend_up": true,
         "breakout": true
       },
       {
         "symbol": "CUB",
         "score": 84,
-        "price": 228.27,
+        "price": 228.24,
         "trend_up": true,
         "breakout": true
       },
       {
         "symbol": "APLAPOLLO",
         "score": 79,
-        "price": 2187.7,
+        "price": 2183.3,
         "trend_up": true,
         "breakout": true
       },
       {
         "symbol": "BHEL",
         "score": 75,
-        "price": 434.0,
+        "price": 433.2,
         "trend_up": true,
         "breakout": false
       },
       {
-        "symbol": "GODREJPROP",
-        "score": 74,
-        "price": 2073.0,
+        "symbol": "WOCKPHARMA",
+        "score": 75,
+        "price": 1977.0,
         "trend_up": true,
         "breakout": false
       }
     ]
   },
-  "last_updated": "2026-08-27T14:23:18.345791",
+  "last_updated": "2026-08-27T14:29:39.858028",
   "intraday": {
-    "last_scan_time": "2026-08-27T14:23:18.344584+05:30",
+    "last_scan_time": "2026-08-27T14:29:39.856848+05:30",
     "universe_size": 150,
     "evaluated": 150,
     "open_positions": 0,
