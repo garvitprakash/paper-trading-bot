@@ -1,6 +1,6 @@
 {
   "swing": {
-    "last_scan_time": "2026-08-27T14:44:41.588958+05:30",
+    "last_scan_time": "2026-08-27T15:05:27.930162+05:30",
     "universe_size": 150,
     "evaluated": 149,
     "open_positions": 3,
@@ -9,64 +9,64 @@
       {
         "symbol": "AMBER",
         "score": 100,
-        "price": 7706.0,
+        "price": 7712.0,
         "trend_up": true,
         "breakout": true
       },
       {
         "symbol": "LAURUSLABS",
-        "score": 95,
-        "price": 1914.5,
+        "score": 94,
+        "price": 1924.0,
         "trend_up": true,
         "breakout": true
       },
       {
         "symbol": "SAILIFE",
-        "score": 86,
-        "price": 1493.8,
+        "score": 87,
+        "price": 1488.7,
         "trend_up": true,
         "breakout": true
       },
       {
         "symbol": "CUB",
-        "score": 84,
-        "price": 228.49,
+        "score": 85,
+        "price": 229.17,
         "trend_up": true,
         "breakout": true
       },
       {
         "symbol": "APLAPOLLO",
-        "score": 79,
-        "price": 2185.5,
+        "score": 80,
+        "price": 2185.7,
         "trend_up": true,
         "breakout": true
       },
       {
         "symbol": "BHEL",
         "score": 75,
-        "price": 432.65,
+        "price": 433.05,
         "trend_up": true,
         "breakout": false
       },
       {
         "symbol": "WOCKPHARMA",
         "score": 75,
-        "price": 1967.2,
+        "price": 1963.0,
         "trend_up": true,
         "breakout": false
       },
       {
-        "symbol": "GODREJPROP",
-        "score": 72,
-        "price": 2063.9,
+        "symbol": "ADANIENT",
+        "score": 74,
+        "price": 3162.9,
         "trend_up": true,
         "breakout": false
       }
     ]
   },
-  "last_updated": "2026-08-27T14:58:31.506018",
+  "last_updated": "2026-08-27T15:05:27.931415",
   "intraday": {
-    "last_scan_time": "2026-08-27T14:58:31.504834+05:30",
+    "last_scan_time": "2026-08-27T15:02:11.431655+05:30",
     "universe_size": 150,
     "evaluated": 150,
     "open_positions": 0,
