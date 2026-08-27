@@ -1,6 +1,6 @@
 {
   "swing": {
-    "last_scan_time": "2026-08-27T13:31:57.189350+05:30",
+    "last_scan_time": "2026-08-27T13:50:39.294150+05:30",
     "universe_size": 150,
     "evaluated": 149,
     "open_positions": 3,
@@ -9,66 +9,66 @@
       {
         "symbol": "AMBER",
         "score": 100,
-        "price": 7721.5,
+        "price": 7738.5,
         "trend_up": true,
         "breakout": true
       },
       {
         "symbol": "LAURUSLABS",
         "score": 95,
-        "price": 1912.9,
+        "price": 1913.4,
         "trend_up": true,
         "breakout": true
       },
       {
         "symbol": "TITAN",
-        "score": 85,
-        "price": 5181.7,
+        "score": 87,
+        "price": 5173.0,
         "trend_up": true,
         "breakout": true
       },
       {
         "symbol": "CUB",
-        "score": 83,
-        "price": 228.58,
-        "trend_up": true,
-        "breakout": true
-      },
-      {
-        "symbol": "SAILIFE",
-        "score": 83,
-        "price": 1489.1,
+        "score": 84,
+        "price": 228.51,
         "trend_up": true,
         "breakout": true
       },
       {
         "symbol": "APLAPOLLO",
-        "score": 77,
-        "price": 2192.4,
+        "score": 78,
+        "price": 2191.0,
         "trend_up": true,
         "breakout": true
       },
       {
         "symbol": "POLICYBZR",
-        "score": 77,
-        "price": 1838.5,
+        "score": 78,
+        "price": 1841.5,
         "trend_up": true,
         "breakout": true
       },
       {
         "symbol": "BHEL",
         "score": 75,
-        "price": 430.25,
+        "price": 430.85,
+        "trend_up": true,
+        "breakout": false
+      },
+      {
+        "symbol": "GODREJPROP",
+        "score": 74,
+        "price": 2070.9,
         "trend_up": true,
         "breakout": false
       }
     ]
   },
-  "last_updated": "2026-08-27T13:47:07.164531",
+  "last_updated": "2026-08-27T13:53:14.224223",
   "intraday": {
-    "last_scan_time": "2026-08-27T13:47:07.163255+05:30",
+    "last_scan_time": "2026-08-27T13:53:14.222820+05:30",
     "universe_size": 150,
-    "evaluated": 149,
+    "evaluated": 150,
     "open_positions": 0,
     "cash": 50000,
     "square_off_time": false,
