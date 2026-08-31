@@ -1,72 +1,72 @@
 {
   "swing": {
-    "last_scan_time": "2026-08-31T11:45:57.929897+05:30",
+    "last_scan_time": "2026-08-31T12:05:59.324826+05:30",
     "universe_size": 150,
     "evaluated": 149,
     "open_positions": 3,
     "cash": 36261.6,
     "top_candidates": [
       {
-        "symbol": "BAJAJ-AUTO",
-        "score": 86,
-        "price": 11994.0,
+        "symbol": "AUROPHARMA",
+        "score": 87,
+        "price": 1692.4,
         "trend_up": true,
         "breakout": true
       },
       {
-        "symbol": "PERSISTENT",
-        "score": 69,
-        "price": 5638.0,
+        "symbol": "BAJAJ-AUTO",
+        "score": 86,
+        "price": 11997.0,
+        "trend_up": true,
+        "breakout": true
+      },
+      {
+        "symbol": "LAURUSLABS",
+        "score": 71,
+        "price": 1918.8,
         "trend_up": true,
         "breakout": false
       },
       {
-        "symbol": "LAURUSLABS",
-        "score": 68,
-        "price": 1917.1,
+        "symbol": "PERSISTENT",
+        "score": 71,
+        "price": 5620.0,
+        "trend_up": true,
+        "breakout": false
+      },
+      {
+        "symbol": "CAMS",
+        "score": 70,
+        "price": 780.1,
         "trend_up": true,
         "breakout": false
       },
       {
         "symbol": "CUB",
-        "score": 66,
-        "price": 229.75,
+        "score": 67,
+        "price": 229.38,
         "trend_up": true,
         "breakout": false
       },
       {
         "symbol": "ETERNAL",
-        "score": 65,
-        "price": 327.85,
-        "trend_up": true,
-        "breakout": false
-      },
-      {
-        "symbol": "OIL",
-        "score": 65,
-        "price": 484.45,
+        "score": 66,
+        "price": 328.7,
         "trend_up": true,
         "breakout": false
       },
       {
         "symbol": "ADANIENT",
-        "score": 61,
-        "price": 3086.8,
-        "trend_up": true,
-        "breakout": false
-      },
-      {
-        "symbol": "AUROPHARMA",
-        "score": 59,
-        "price": 1674.2,
+        "score": 65,
+        "price": 3095.5,
         "trend_up": true,
         "breakout": false
       }
     ]
   },
-  "last_updated": "2026-08-31T11:59:55.854086",
+  "last_updated": "2026-08-31T12:05:59.326095",
   "intraday": {
-    "last_scan_time": "2026-08-31T11:59:55.852888+05:30",
+    "last_scan_time": "2026-08-31T12:03:20.670568+05:30",
     "universe_size": 150,
     "evaluated": 150,
     "open_positions": 0,
