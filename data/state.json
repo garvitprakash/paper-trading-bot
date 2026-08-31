@@ -1,19 +1,7 @@
 {
-  "swing_cash": 36569.4,
+  "swing_cash": 36261.6,
   "intraday_cash": 50000,
   "positions": [
-    {
-      "id": "PNBHOUSING-1787198919.481685",
-      "type": "swing",
-      "symbol": "PNBHOUSING",
-      "name": "PNBHOUSING",
-      "qty": 4,
-      "entry": 1195.1,
-      "entry_date": "2026-08-20T09:38:39.481776",
-      "stop": 1147.2959999999998,
-      "target": 1302.659,
-      "peak": 1198.0
-    },
     {
       "id": "ETERNAL-1787200082.783016",
       "type": "swing",
@@ -36,8 +24,34 @@
       "entry_date": "2026-08-20T10:57:10.000691",
       "stop": 1796.2559999999999,
       "target": 2039.499,
-      "peak": 1871.1
+      "peak": 1977.0
+    },
+    {
+      "id": "OIL-1788150290.584043",
+      "type": "swing",
+      "symbol": "OIL",
+      "name": "OIL",
+      "qty": 10,
+      "entry": 490.5,
+      "entry_date": "2026-08-31T09:54:50.584113",
+      "stop": 470.88,
+      "target": 534.6450000000001,
+      "peak": 490.5
     }
   ],
-  "history": []
+  "history": [
+    {
+      "type": "swing",
+      "symbol": "PNBHOUSING",
+      "name": "PNBHOUSING",
+      "purchase_date": "2026-08-20T09:38:39.481776",
+      "qty": 4,
+      "purchase_amount": 4780.4,
+      "sale_date": "2026-08-31T09:54:49.692996",
+      "sale_qty": 4,
+      "sale_amount": 4597.2,
+      "profit": -183.19999999999982,
+      "reason": "Trend Weak (20 EMA se neeche)"
+    }
+  ]
 }
