@@ -1,6 +1,6 @@
 {
   "swing": {
-    "last_scan_time": "2026-08-31T12:05:59.324826+05:30",
+    "last_scan_time": "2026-08-31T12:26:12.344112+05:30",
     "universe_size": 150,
     "evaluated": 149,
     "open_positions": 3,
@@ -8,65 +8,65 @@
     "top_candidates": [
       {
         "symbol": "AUROPHARMA",
-        "score": 87,
-        "price": 1692.4,
+        "score": 88,
+        "price": 1689.1,
         "trend_up": true,
         "breakout": true
       },
       {
         "symbol": "BAJAJ-AUTO",
-        "score": 86,
-        "price": 11997.0,
+        "score": 87,
+        "price": 11994.0,
         "trend_up": true,
         "breakout": true
       },
       {
         "symbol": "LAURUSLABS",
-        "score": 71,
-        "price": 1918.8,
+        "score": 73,
+        "price": 1916.7,
         "trend_up": true,
         "breakout": false
       },
       {
         "symbol": "PERSISTENT",
-        "score": 71,
-        "price": 5620.0,
-        "trend_up": true,
-        "breakout": false
-      },
-      {
-        "symbol": "CAMS",
-        "score": 70,
-        "price": 780.1,
-        "trend_up": true,
-        "breakout": false
-      },
-      {
-        "symbol": "CUB",
-        "score": 67,
-        "price": 229.38,
+        "score": 72,
+        "price": 5621.5,
         "trend_up": true,
         "breakout": false
       },
       {
         "symbol": "ETERNAL",
-        "score": 66,
-        "price": 328.7,
+        "score": 68,
+        "price": 328.3,
+        "trend_up": true,
+        "breakout": false
+      },
+      {
+        "symbol": "CUB",
+        "score": 68,
+        "price": 229.04,
+        "trend_up": true,
+        "breakout": false
+      },
+      {
+        "symbol": "CAMS",
+        "score": 68,
+        "price": 775.95,
         "trend_up": true,
         "breakout": false
       },
       {
         "symbol": "ADANIENT",
         "score": 65,
-        "price": 3095.5,
+        "price": 3091.6,
         "trend_up": true,
         "breakout": false
       }
     ]
   },
-  "last_updated": "2026-08-31T12:19:26.465404",
+  "last_updated": "2026-08-31T12:26:12.345601",
   "intraday": {
-    "last_scan_time": "2026-08-31T12:19:26.464156+05:30",
+    "last_scan_time": "2026-08-31T12:23:05.805218+05:30",
     "universe_size": 150,
     "evaluated": 150,
     "open_positions": 0,
