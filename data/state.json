@@ -1,19 +1,7 @@
 {
-  "swing_cash": 36261.6,
+  "swing_cash": 41033.85,
   "intraday_cash": 50000,
   "positions": [
-    {
-      "id": "ETERNAL-1787200082.783016",
-      "type": "swing",
-      "symbol": "ETERNAL",
-      "name": "ETERNAL",
-      "qty": 15,
-      "entry": 327.2,
-      "entry_date": "2026-08-20T09:58:02.783106",
-      "stop": 314.11199999999997,
-      "target": 356.648,
-      "peak": 327.65
-    },
     {
       "id": "COFORGE-1787203630.000603",
       "type": "swing",
@@ -51,6 +39,19 @@
       "sale_qty": 4,
       "sale_amount": 4597.2,
       "profit": -183.19999999999982,
+      "reason": "Trend Weak (20 EMA se neeche)"
+    },
+    {
+      "type": "swing",
+      "symbol": "ETERNAL",
+      "name": "ETERNAL",
+      "purchase_date": "2026-08-20T09:58:02.783106",
+      "qty": 15,
+      "purchase_amount": 4908.0,
+      "sale_date": "2026-08-31T15:18:55.101519",
+      "sale_qty": 15,
+      "sale_amount": 4772.25,
+      "profit": -135.75,
       "reason": "Trend Weak (20 EMA se neeche)"
     }
   ]
