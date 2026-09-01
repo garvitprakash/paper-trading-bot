@@ -1,6 +1,6 @@
 {
   "swing": {
-    "last_scan_time": "2026-09-01T14:40:35.672433+05:30",
+    "last_scan_time": "2026-09-01T14:59:12.132563+05:30",
     "universe_size": 150,
     "evaluated": 149,
     "open_positions": 3,
@@ -9,64 +9,64 @@
       {
         "symbol": "SAILIFE",
         "score": 100,
-        "price": 1530.2,
+        "price": 1521.2,
         "trend_up": true,
         "breakout": true
       },
       {
         "symbol": "BAJAJ-AUTO",
-        "score": 96,
-        "price": 12299.0,
+        "score": 95,
+        "price": 12342.0,
         "trend_up": true,
         "breakout": true
       },
       {
         "symbol": "CUB",
         "score": 88,
-        "price": 233.0,
+        "price": 234.0,
         "trend_up": true,
         "breakout": true
       },
       {
         "symbol": "PERSISTENT",
-        "score": 69,
+        "score": 70,
         "price": 5763.0,
         "trend_up": true,
         "breakout": false
       },
       {
+        "symbol": "PNBHOUSING",
+        "score": 70,
+        "price": 1149.9,
+        "trend_up": true,
+        "breakout": false
+      },
+      {
         "symbol": "WELCORP",
-        "score": 68,
-        "price": 2527.2,
+        "score": 69,
+        "price": 2525.6,
         "trend_up": true,
         "breakout": true
       },
       {
         "symbol": "NYKAA",
-        "score": 65,
-        "price": 338.9,
+        "score": 67,
+        "price": 339.65,
         "trend_up": true,
         "breakout": false
       },
       {
-        "symbol": "HEROMOTOCO",
-        "score": 65,
-        "price": 5532.0,
-        "trend_up": true,
-        "breakout": false
-      },
-      {
-        "symbol": "LALPATHLAB",
-        "score": 65,
-        "price": 1901.0,
+        "symbol": "SUNPHARMA",
+        "score": 66,
+        "price": 1925.6,
         "trend_up": true,
         "breakout": false
       }
     ]
   },
-  "last_updated": "2026-09-01T14:56:12.791205",
+  "last_updated": "2026-09-01T15:01:39.026362",
   "intraday": {
-    "last_scan_time": "2026-09-01T14:56:12.790007+05:30",
+    "last_scan_time": "2026-09-01T15:01:39.025167+05:30",
     "universe_size": 150,
     "evaluated": 150,
     "open_positions": 0,
