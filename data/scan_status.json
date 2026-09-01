@@ -1,6 +1,6 @@
 {
   "swing": {
-    "last_scan_time": "2026-09-01T14:03:15.208561+05:30",
+    "last_scan_time": "2026-09-01T14:20:54.976021+05:30",
     "universe_size": 150,
     "evaluated": 149,
     "open_positions": 3,
@@ -9,64 +9,64 @@
       {
         "symbol": "SAILIFE",
         "score": 100,
-        "price": 1520.3,
+        "price": 1517.9,
         "trend_up": true,
         "breakout": true
       },
       {
         "symbol": "BAJAJ-AUTO",
         "score": 96,
-        "price": 12311.0,
+        "price": 12302.0,
         "trend_up": true,
         "breakout": true
       },
       {
         "symbol": "CUB",
         "score": 87,
-        "price": 233.74,
+        "price": 233.65,
         "trend_up": true,
         "breakout": true
       },
       {
         "symbol": "PERSISTENT",
-        "score": 68,
-        "price": 5776.0,
+        "score": 69,
+        "price": 5774.0,
         "trend_up": true,
         "breakout": false
       },
       {
         "symbol": "LALPATHLAB",
-        "score": 64,
-        "price": 1900.1,
-        "trend_up": true,
-        "breakout": false
-      },
-      {
-        "symbol": "NYKAA",
-        "score": 63,
-        "price": 338.7,
+        "score": 65,
+        "price": 1900.2,
         "trend_up": true,
         "breakout": false
       },
       {
         "symbol": "WELCORP",
-        "score": 63,
-        "price": 2512.0,
+        "score": 65,
+        "price": 2504.5,
         "trend_up": true,
         "breakout": true
       },
       {
-        "symbol": "SUNPHARMA",
-        "score": 62,
-        "price": 1926.8,
+        "symbol": "NYKAA",
+        "score": 64,
+        "price": 338.2,
+        "trend_up": true,
+        "breakout": false
+      },
+      {
+        "symbol": "COFORGE",
+        "score": 63,
+        "price": 1963.8,
         "trend_up": true,
         "breakout": false
       }
     ]
   },
-  "last_updated": "2026-09-01T14:14:55.664564",
+  "last_updated": "2026-09-01T14:20:54.977367",
   "intraday": {
-    "last_scan_time": "2026-09-01T14:14:55.663043+05:30",
+    "last_scan_time": "2026-09-01T14:18:02.031709+05:30",
     "universe_size": 150,
     "evaluated": 150,
     "open_positions": 0,
