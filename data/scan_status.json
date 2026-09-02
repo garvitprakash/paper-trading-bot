@@ -1,74 +1,74 @@
 {
   "swing": {
-    "last_scan_time": "2026-09-02T09:17:59.781748+05:30",
+    "last_scan_time": "2026-09-02T09:35:59.458134+05:30",
     "universe_size": 150,
     "evaluated": 149,
     "open_positions": 3,
     "cash": 36449.85,
     "top_candidates": [
       {
-        "symbol": "MCX",
-        "score": 51,
-        "price": 3271.5,
-        "trend_up": true,
-        "breakout": false
+        "symbol": "COALINDIA",
+        "score": 71,
+        "price": 418.7,
+        "trend_up": false,
+        "breakout": true
       },
       {
-        "symbol": "OIL",
-        "score": 51,
-        "price": 494.0,
-        "trend_up": true,
-        "breakout": false
-      },
-      {
-        "symbol": "PERSISTENT",
-        "score": 51,
-        "price": 5708.0,
+        "symbol": "SAILIFE",
+        "score": 56,
+        "price": 1557.5,
         "trend_up": true,
         "breakout": false
       },
       {
         "symbol": "GLAND",
-        "score": 51,
-        "price": 2898.2,
+        "score": 54,
+        "price": 2853.3,
+        "trend_up": true,
+        "breakout": false
+      },
+      {
+        "symbol": "OIL",
+        "score": 53,
+        "price": 489.25,
+        "trend_up": true,
+        "breakout": false
+      },
+      {
+        "symbol": "PERSISTENT",
+        "score": 53,
+        "price": 5694.0,
         "trend_up": true,
         "breakout": false
       },
       {
         "symbol": "REDINGTON",
-        "score": 51,
-        "price": 347.0,
+        "score": 53,
+        "price": 356.3,
         "trend_up": true,
         "breakout": false
       },
       {
         "symbol": "BAJAJ-AUTO",
-        "score": 50,
-        "price": 12236.0,
+        "score": 52,
+        "price": 12156.0,
         "trend_up": true,
         "breakout": false
       },
       {
-        "symbol": "ETERNAL",
-        "score": 50,
-        "price": 324.9,
-        "trend_up": true,
-        "breakout": false
-      },
-      {
-        "symbol": "KOTAKBANK",
-        "score": 50,
-        "price": 423.1,
+        "symbol": "APLAPOLLO",
+        "score": 52,
+        "price": 2201.6,
         "trend_up": true,
         "breakout": false
       }
     ]
   },
-  "last_updated": "2026-09-02T09:29:19.712788",
+  "last_updated": "2026-09-02T09:35:59.459410",
   "intraday": {
-    "last_scan_time": "2026-09-02T09:29:19.711672+05:30",
+    "last_scan_time": "2026-09-02T09:32:20.810327+05:30",
     "universe_size": 150,
-    "evaluated": 0,
+    "evaluated": 98,
     "open_positions": 0,
     "cash": 50000,
     "square_off_time": false,
