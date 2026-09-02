@@ -1,70 +1,70 @@
 {
   "swing": {
-    "last_scan_time": "2026-09-02T09:35:59.458134+05:30",
+    "last_scan_time": "2026-09-02T11:12:26.991443+05:30",
     "universe_size": 150,
     "evaluated": 149,
     "open_positions": 3,
     "cash": 36449.85,
     "top_candidates": [
       {
-        "symbol": "COALINDIA",
-        "score": 71,
-        "price": 418.7,
-        "trend_up": false,
-        "breakout": true
-      },
-      {
         "symbol": "SAILIFE",
-        "score": 56,
-        "price": 1557.5,
-        "trend_up": true,
-        "breakout": false
-      },
-      {
-        "symbol": "GLAND",
-        "score": 54,
-        "price": 2853.3,
-        "trend_up": true,
-        "breakout": false
-      },
-      {
-        "symbol": "OIL",
-        "score": 53,
-        "price": 489.25,
-        "trend_up": true,
-        "breakout": false
-      },
-      {
-        "symbol": "PERSISTENT",
-        "score": 53,
-        "price": 5694.0,
+        "score": 74,
+        "price": 1553.0,
         "trend_up": true,
         "breakout": false
       },
       {
         "symbol": "REDINGTON",
-        "score": 53,
-        "price": 356.3,
+        "score": 63,
+        "price": 357.5,
         "trend_up": true,
         "breakout": false
       },
       {
-        "symbol": "BAJAJ-AUTO",
-        "score": 52,
-        "price": 12156.0,
+        "symbol": "PERSISTENT",
+        "score": 60,
+        "price": 5661.5,
         "trend_up": true,
         "breakout": false
       },
       {
-        "symbol": "APLAPOLLO",
-        "score": 52,
-        "price": 2201.6,
+        "symbol": "NH",
+        "score": 59,
+        "price": 1922.2,
+        "trend_up": true,
+        "breakout": false
+      },
+      {
+        "symbol": "IIFL",
+        "score": 57,
+        "price": 639.3,
+        "trend_up": true,
+        "breakout": false
+      },
+      {
+        "symbol": "MCX",
+        "score": 56,
+        "price": 3317.1,
+        "trend_up": true,
+        "breakout": false
+      },
+      {
+        "symbol": "LALPATHLAB",
+        "score": 56,
+        "price": 1918.7,
+        "trend_up": true,
+        "breakout": false
+      },
+      {
+        "symbol": "RBLBANK",
+        "score": 56,
+        "price": 383.6,
         "trend_up": true,
         "breakout": false
       }
     ]
   },
-  "last_updated": "2026-09-02T09:50:07.274558",
+  "last_updated": "2026-09-02T11:12:26.992709",
   "intraday": {
     "last_scan_time": "2026-09-02T09:50:07.273290+05:30",
     "universe_size": 150,
