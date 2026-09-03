@@ -1,6 +1,6 @@
 {
   "swing": {
-    "last_scan_time": "2026-09-03T12:54:49.341830+05:30",
+    "last_scan_time": "2026-09-03T13:12:06.732948+05:30",
     "universe_size": 150,
     "evaluated": 149,
     "open_positions": 3,
@@ -9,64 +9,64 @@
       {
         "symbol": "RBLBANK",
         "score": 99,
-        "price": 409.2,
+        "price": 409.3,
         "trend_up": true,
         "breakout": true
       },
       {
         "symbol": "SAILIFE",
         "score": 92,
-        "price": 1600.1,
+        "price": 1604.2,
         "trend_up": true,
         "breakout": true
       },
       {
         "symbol": "CUB",
-        "score": 86,
-        "price": 238.74,
+        "score": 87,
+        "price": 238.53,
         "trend_up": true,
         "breakout": true
       },
       {
         "symbol": "IDFCFIRSTB",
         "score": 75,
-        "price": 86.82,
+        "price": 86.57,
         "trend_up": true,
         "breakout": false
       },
       {
         "symbol": "IIFL",
         "score": 75,
-        "price": 648.1,
+        "price": 648.6,
         "trend_up": true,
         "breakout": false
       },
       {
         "symbol": "REDINGTON",
         "score": 74,
-        "price": 370.75,
-        "trend_up": true,
-        "breakout": false
-      },
-      {
-        "symbol": "PRESTIGE",
-        "score": 70,
-        "price": 1624.9,
+        "price": 370.9,
         "trend_up": true,
         "breakout": false
       },
       {
         "symbol": "APLAPOLLO",
+        "score": 70,
+        "price": 2145.5,
+        "trend_up": true,
+        "breakout": false
+      },
+      {
+        "symbol": "PRESTIGE",
         "score": 69,
-        "price": 2150.2,
+        "price": 1620.5,
         "trend_up": true,
         "breakout": false
       }
     ]
   },
-  "last_updated": "2026-09-03T13:06:31.156450",
+  "last_updated": "2026-09-03T13:12:06.734394",
   "intraday": {
-    "last_scan_time": "2026-09-03T13:06:31.155260+05:30",
+    "last_scan_time": "2026-09-03T13:09:31.928828+05:30",
     "universe_size": 150,
     "evaluated": 150,
     "open_positions": 0,
