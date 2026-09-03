@@ -1,72 +1,72 @@
 {
   "swing": {
-    "last_scan_time": "2026-09-03T13:12:06.732948+05:30",
+    "last_scan_time": "2026-09-03T13:29:23.901649+05:30",
     "universe_size": 150,
     "evaluated": 149,
     "open_positions": 3,
     "cash": 36449.85,
     "top_candidates": [
       {
+        "symbol": "IDFCFIRSTB",
+        "score": 100,
+        "price": 86.95,
+        "trend_up": true,
+        "breakout": true
+      },
+      {
         "symbol": "RBLBANK",
         "score": 99,
-        "price": 409.3,
+        "price": 409.8,
         "trend_up": true,
         "breakout": true
       },
       {
         "symbol": "SAILIFE",
         "score": 92,
-        "price": 1604.2,
+        "price": 1606.1,
         "trend_up": true,
         "breakout": true
       },
       {
         "symbol": "CUB",
-        "score": 87,
-        "price": 238.53,
+        "score": 88,
+        "price": 237.8,
         "trend_up": true,
         "breakout": true
       },
       {
-        "symbol": "IDFCFIRSTB",
-        "score": 75,
-        "price": 86.57,
-        "trend_up": true,
-        "breakout": false
-      },
-      {
         "symbol": "IIFL",
         "score": 75,
-        "price": 648.6,
+        "price": 647.8,
         "trend_up": true,
         "breakout": false
       },
       {
         "symbol": "REDINGTON",
-        "score": 74,
-        "price": 370.9,
+        "score": 75,
+        "price": 370.4,
         "trend_up": true,
         "breakout": false
       },
       {
         "symbol": "APLAPOLLO",
-        "score": 70,
-        "price": 2145.5,
+        "score": 71,
+        "price": 2146.9,
         "trend_up": true,
         "breakout": false
       },
       {
-        "symbol": "PRESTIGE",
-        "score": 69,
-        "price": 1620.5,
+        "symbol": "KARURVYSYA",
+        "score": 70,
+        "price": 351.85,
         "trend_up": true,
         "breakout": false
       }
     ]
   },
-  "last_updated": "2026-09-03T13:26:20.216385",
+  "last_updated": "2026-09-03T13:31:23.335156",
   "intraday": {
-    "last_scan_time": "2026-09-03T13:26:20.215201+05:30",
+    "last_scan_time": "2026-09-03T13:31:23.333935+05:30",
     "universe_size": 150,
     "evaluated": 150,
     "open_positions": 0,
