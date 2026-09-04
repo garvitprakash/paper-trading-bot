@@ -1,6 +1,6 @@
 {
   "swing": {
-    "last_scan_time": "2026-09-04T15:10:31.658625+05:30",
+    "last_scan_time": "2026-09-04T15:29:44.369202+05:30",
     "universe_size": 150,
     "evaluated": 149,
     "open_positions": 3,
@@ -9,64 +9,64 @@
       {
         "symbol": "WOCKPHARMA",
         "score": 100,
-        "price": 2082.4,
+        "price": 2096.0,
         "trend_up": true,
         "breakout": true
       },
       {
         "symbol": "RBLBANK",
-        "score": 95,
-        "price": 414.65,
+        "score": 94,
+        "price": 415.85,
         "trend_up": true,
         "breakout": true
       },
       {
         "symbol": "GLAND",
         "score": 75,
-        "price": 2936.3,
+        "price": 2933.0,
         "trend_up": true,
         "breakout": false
       },
       {
         "symbol": "IGL",
         "score": 75,
-        "price": 157.94,
+        "price": 158.06,
         "trend_up": false,
         "breakout": true
       },
       {
         "symbol": "APLAPOLLO",
-        "score": 71,
-        "price": 2253.3,
+        "score": 74,
+        "price": 2247.0,
         "trend_up": true,
         "breakout": false
       },
       {
         "symbol": "ANGELONE",
         "score": 71,
-        "price": 299.6,
+        "price": 299.45,
+        "trend_up": true,
+        "breakout": false
+      },
+      {
+        "symbol": "PNBHOUSING",
+        "score": 69,
+        "price": 1165.0,
         "trend_up": true,
         "breakout": false
       },
       {
         "symbol": "IDFCFIRSTB",
         "score": 68,
-        "price": 86.67,
-        "trend_up": true,
-        "breakout": false
-      },
-      {
-        "symbol": "PAYTM",
-        "score": 68,
-        "price": 1664.5,
+        "price": 86.71,
         "trend_up": true,
         "breakout": false
       }
     ]
   },
-  "last_updated": "2026-09-04T15:23:41.842868",
+  "last_updated": "2026-09-04T15:29:44.370826",
   "intraday": {
-    "last_scan_time": "2026-09-04T15:23:41.841404+05:30",
+    "last_scan_time": "2026-09-04T15:27:11.156205+05:30",
     "universe_size": 150,
     "evaluated": 150,
     "open_positions": 0,
