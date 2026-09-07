@@ -64,14 +64,14 @@
       }
     ]
   },
-  "last_updated": "2026-09-07T15:04:05.065996",
+  "last_updated": "2026-09-07T15:10:14.401604",
   "intraday": {
-    "last_scan_time": "2026-09-07T15:04:05.064727+05:30",
+    "last_scan_time": "2026-09-07T15:10:14.400300+05:30",
     "universe_size": 150,
     "evaluated": 150,
     "open_positions": 0,
     "cash": 50000,
-    "square_off_time": false,
+    "square_off_time": true,
     "top_candidates": []
   }
 }
