@@ -1,72 +1,72 @@
 {
   "swing": {
-    "last_scan_time": "2026-09-07T09:37:36.799329+05:30",
+    "last_scan_time": "2026-09-07T09:55:56.969327+05:30",
     "universe_size": 150,
     "evaluated": 150,
     "open_positions": 3,
     "cash": 36449.85,
     "top_candidates": [
       {
-        "symbol": "ANANDRATHI",
-        "score": 80,
-        "price": 2245.0,
+        "symbol": "WOCKPHARMA",
+        "score": 86,
+        "price": 2112.0,
         "trend_up": true,
         "breakout": true
       },
       {
-        "symbol": "WOCKPHARMA",
-        "score": 59,
-        "price": 2095.0,
-        "trend_up": true,
-        "breakout": false
-      },
-      {
-        "symbol": "REDINGTON",
-        "score": 55,
-        "price": 378.5,
-        "trend_up": true,
-        "breakout": false
-      },
-      {
-        "symbol": "JSWSTEEL",
-        "score": 53,
-        "price": 1318.5,
+        "symbol": "ANANDRATHI",
+        "score": 58,
+        "price": 2238.1,
         "trend_up": true,
         "breakout": false
       },
       {
         "symbol": "ANGELONE",
-        "score": 53,
-        "price": 303.75,
+        "score": 56,
+        "price": 306.4,
         "trend_up": true,
         "breakout": false
       },
       {
-        "symbol": "MCX",
-        "score": 52,
-        "price": 3332.7,
+        "symbol": "REDINGTON",
+        "score": 56,
+        "price": 375.25,
+        "trend_up": true,
+        "breakout": false
+      },
+      {
+        "symbol": "JSWSTEEL",
+        "score": 55,
+        "price": 1315.5,
         "trend_up": true,
         "breakout": false
       },
       {
         "symbol": "RBLBANK",
-        "score": 52,
-        "price": 411.2,
+        "score": 54,
+        "price": 409.85,
         "trend_up": true,
         "breakout": false
       },
       {
-        "symbol": "ETERNAL",
-        "score": 51,
-        "price": 324.2,
+        "symbol": "MCX",
+        "score": 53,
+        "price": 3338.8,
+        "trend_up": true,
+        "breakout": false
+      },
+      {
+        "symbol": "APLAPOLLO",
+        "score": 52,
+        "price": 2225.0,
         "trend_up": true,
         "breakout": false
       }
     ]
   },
-  "last_updated": "2026-09-07T09:50:06.954750",
+  "last_updated": "2026-09-07T09:55:56.970813",
   "intraday": {
-    "last_scan_time": "2026-09-07T09:50:06.953633+05:30",
+    "last_scan_time": "2026-09-07T09:53:13.067195+05:30",
     "universe_size": 150,
     "evaluated": 150,
     "open_positions": 0,
