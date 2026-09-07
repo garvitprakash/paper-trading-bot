@@ -1,6 +1,6 @@
 {
   "swing": {
-    "last_scan_time": "2026-09-07T14:41:37.422715+05:30",
+    "last_scan_time": "2026-09-07T14:58:54.258523+05:30",
     "universe_size": 150,
     "evaluated": 150,
     "open_positions": 3,
@@ -9,28 +9,35 @@
       {
         "symbol": "WOCKPHARMA",
         "score": 100,
-        "price": 2195.0,
+        "price": 2191.4,
         "trend_up": true,
         "breakout": true
       },
       {
         "symbol": "REDINGTON",
-        "score": 89,
-        "price": 378.9,
+        "score": 90,
+        "price": 378.95,
         "trend_up": true,
         "breakout": true
       },
       {
         "symbol": "CUB",
         "score": 75,
-        "price": 239.82,
+        "price": 240.18,
+        "trend_up": true,
+        "breakout": false
+      },
+      {
+        "symbol": "IIFL",
+        "score": 74,
+        "price": 649.3,
         "trend_up": true,
         "breakout": false
       },
       {
         "symbol": "PPLPHARMA",
-        "score": 72,
-        "price": 218.67,
+        "score": 73,
+        "price": 218.75,
         "trend_up": true,
         "breakout": false
       },
@@ -42,31 +49,24 @@
         "breakout": false
       },
       {
-        "symbol": "IIFL",
-        "score": 70,
-        "price": 641.6,
-        "trend_up": true,
-        "breakout": false
-      },
-      {
         "symbol": "ANANDRATHI",
-        "score": 69,
-        "price": 2223.7,
+        "score": 70,
+        "price": 2225.2,
         "trend_up": true,
         "breakout": false
       },
       {
         "symbol": "ANGELONE",
         "score": 68,
-        "price": 304.5,
+        "price": 304.55,
         "trend_up": true,
         "breakout": false
       }
     ]
   },
-  "last_updated": "2026-09-07T14:56:32.940255",
+  "last_updated": "2026-09-07T15:04:05.065996",
   "intraday": {
-    "last_scan_time": "2026-09-07T14:56:32.939068+05:30",
+    "last_scan_time": "2026-09-07T15:04:05.064727+05:30",
     "universe_size": 150,
     "evaluated": 150,
     "open_positions": 0,
