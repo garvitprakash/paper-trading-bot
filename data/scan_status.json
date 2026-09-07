@@ -1,6 +1,6 @@
 {
   "swing": {
-    "last_scan_time": "2026-09-07T14:06:22.568128+05:30",
+    "last_scan_time": "2026-09-07T14:23:42.309286+05:30",
     "universe_size": 150,
     "evaluated": 150,
     "open_positions": 3,
@@ -9,64 +9,64 @@
       {
         "symbol": "WOCKPHARMA",
         "score": 100,
-        "price": 2197.5,
+        "price": 2192.0,
+        "trend_up": true,
+        "breakout": true
+      },
+      {
+        "symbol": "REDINGTON",
+        "score": 89,
+        "price": 379.0,
         "trend_up": true,
         "breakout": true
       },
       {
         "symbol": "CUB",
         "score": 75,
-        "price": 240.36,
+        "price": 240.14,
+        "trend_up": true,
+        "breakout": false
+      },
+      {
+        "symbol": "PPLPHARMA",
+        "score": 72,
+        "price": 218.0,
         "trend_up": true,
         "breakout": false
       },
       {
         "symbol": "PIRAMALFIN",
         "score": 71,
-        "price": 2262.7,
-        "trend_up": true,
-        "breakout": false
-      },
-      {
-        "symbol": "PPLPHARMA",
-        "score": 71,
-        "price": 217.99,
+        "price": 2266.0,
         "trend_up": true,
         "breakout": false
       },
       {
         "symbol": "ANANDRATHI",
-        "score": 68,
-        "price": 2232.9,
+        "score": 69,
+        "price": 2229.5,
         "trend_up": true,
         "breakout": false
       },
       {
         "symbol": "ANGELONE",
         "score": 67,
-        "price": 305.25,
+        "price": 305.2,
         "trend_up": true,
         "breakout": false
       },
       {
         "symbol": "APLAPOLLO",
         "score": 64,
-        "price": 2208.2,
-        "trend_up": true,
-        "breakout": false
-      },
-      {
-        "symbol": "GLAND",
-        "score": 63,
-        "price": 2971.7,
+        "price": 2208.1,
         "trend_up": true,
         "breakout": false
       }
     ]
   },
-  "last_updated": "2026-09-07T14:20:37.199711",
+  "last_updated": "2026-09-07T14:26:02.493069",
   "intraday": {
-    "last_scan_time": "2026-09-07T14:20:37.198527+05:30",
+    "last_scan_time": "2026-09-07T14:26:02.491895+05:30",
     "universe_size": 150,
     "evaluated": 150,
     "open_positions": 0,
