@@ -1,6 +1,6 @@
 {
   "swing": {
-    "last_scan_time": "2026-09-07T13:29:50.092582+05:30",
+    "last_scan_time": "2026-09-07T13:48:10.628919+05:30",
     "universe_size": 150,
     "evaluated": 150,
     "open_positions": 3,
@@ -9,28 +9,35 @@
       {
         "symbol": "WOCKPHARMA",
         "score": 100,
-        "price": 2188.3,
+        "price": 2198.0,
+        "trend_up": true,
+        "breakout": true
+      },
+      {
+        "symbol": "REDINGTON",
+        "score": 87,
+        "price": 379.5,
         "trend_up": true,
         "breakout": true
       },
       {
         "symbol": "CUB",
         "score": 75,
-        "price": 241.81,
+        "price": 238.65,
         "trend_up": true,
         "breakout": false
       },
       {
         "symbol": "PPLPHARMA",
         "score": 71,
-        "price": 217.97,
+        "price": 218.03,
         "trend_up": true,
         "breakout": false
       },
       {
         "symbol": "PIRAMALFIN",
-        "score": 69,
-        "price": 2267.0,
+        "score": 70,
+        "price": 2251.0,
         "trend_up": true,
         "breakout": false
       },
@@ -43,30 +50,23 @@
       },
       {
         "symbol": "ANGELONE",
-        "score": 65,
-        "price": 303.45,
-        "trend_up": true,
-        "breakout": false
-      },
-      {
-        "symbol": "APLAPOLLO",
-        "score": 63,
-        "price": 2209.9,
+        "score": 66,
+        "price": 303.85,
         "trend_up": true,
         "breakout": false
       },
       {
         "symbol": "IIFL",
-        "score": 63,
-        "price": 655.75,
+        "score": 65,
+        "price": 645.5,
         "trend_up": true,
         "breakout": false
       }
     ]
   },
-  "last_updated": "2026-09-07T13:42:19.779857",
+  "last_updated": "2026-09-07T13:48:10.630419",
   "intraday": {
-    "last_scan_time": "2026-09-07T13:42:19.778678+05:30",
+    "last_scan_time": "2026-09-07T13:45:27.931485+05:30",
     "universe_size": 150,
     "evaluated": 150,
     "open_positions": 0,
