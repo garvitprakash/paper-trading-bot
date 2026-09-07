@@ -1,74 +1,74 @@
 {
   "swing": {
-    "last_scan_time": "2026-09-07T09:20:05.216343+05:30",
+    "last_scan_time": "2026-09-07T09:37:36.799329+05:30",
     "universe_size": 150,
     "evaluated": 150,
     "open_positions": 3,
     "cash": 36449.85,
     "top_candidates": [
       {
-        "symbol": "REDINGTON",
-        "score": 76,
-        "price": 380.1,
+        "symbol": "ANANDRATHI",
+        "score": 80,
+        "price": 2245.0,
         "trend_up": true,
         "breakout": true
       },
       {
         "symbol": "WOCKPHARMA",
-        "score": 54,
-        "price": 2101.0,
+        "score": 59,
+        "price": 2095.0,
+        "trend_up": true,
+        "breakout": false
+      },
+      {
+        "symbol": "REDINGTON",
+        "score": 55,
+        "price": 378.5,
         "trend_up": true,
         "breakout": false
       },
       {
         "symbol": "JSWSTEEL",
-        "score": 51,
-        "price": 1323.5,
+        "score": 53,
+        "price": 1318.5,
         "trend_up": true,
         "breakout": false
       },
       {
-        "symbol": "COFORGE",
-        "score": 51,
-        "price": 1949.7,
-        "trend_up": true,
-        "breakout": false
-      },
-      {
-        "symbol": "IDFCFIRSTB",
-        "score": 51,
-        "price": 86.1,
+        "symbol": "ANGELONE",
+        "score": 53,
+        "price": 303.75,
         "trend_up": true,
         "breakout": false
       },
       {
         "symbol": "MCX",
-        "score": 51,
-        "price": 3318.7,
+        "score": 52,
+        "price": 3332.7,
         "trend_up": true,
         "breakout": false
       },
       {
-        "symbol": "OIL",
-        "score": 51,
-        "price": 488.7,
+        "symbol": "RBLBANK",
+        "score": 52,
+        "price": 411.2,
         "trend_up": true,
         "breakout": false
       },
       {
-        "symbol": "ANANDRATHI",
+        "symbol": "ETERNAL",
         "score": 51,
-        "price": 2226.7,
+        "price": 324.2,
         "trend_up": true,
         "breakout": false
       }
     ]
   },
-  "last_updated": "2026-09-07T09:32:00.857209",
+  "last_updated": "2026-09-07T09:37:36.800643",
   "intraday": {
-    "last_scan_time": "2026-09-07T09:32:00.856095+05:30",
+    "last_scan_time": "2026-09-07T09:35:05.133537+05:30",
     "universe_size": 150,
-    "evaluated": 75,
+    "evaluated": 150,
     "open_positions": 0,
     "cash": 50000,
     "square_off_time": false,
