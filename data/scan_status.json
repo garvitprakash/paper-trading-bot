@@ -1,6 +1,6 @@
 {
   "swing": {
-    "last_scan_time": "2026-09-08T09:40:15.658648+05:30",
+    "last_scan_time": "2026-09-08T09:57:58.936265+05:30",
     "universe_size": 150,
     "evaluated": 150,
     "open_positions": 3,
@@ -8,65 +8,65 @@
     "top_candidates": [
       {
         "symbol": "PPLPHARMA",
-        "score": 93,
-        "price": 224.02,
+        "score": 100,
+        "price": 226.31,
         "trend_up": true,
         "breakout": true
       },
       {
         "symbol": "IIFL",
-        "score": 63,
-        "price": 651.05,
+        "score": 62,
+        "price": 640.5,
         "trend_up": true,
         "breakout": false
       },
       {
         "symbol": "WOCKPHARMA",
-        "score": 57,
-        "price": 2215.0,
-        "trend_up": true,
-        "breakout": false
-      },
-      {
-        "symbol": "NEULANDLAB",
-        "score": 55,
-        "price": 23445.0,
+        "score": 59,
+        "price": 2186.6,
         "trend_up": true,
         "breakout": false
       },
       {
         "symbol": "AUROPHARMA",
-        "score": 54,
-        "price": 1682.4,
+        "score": 57,
+        "price": 1686.4,
+        "trend_up": true,
+        "breakout": false
+      },
+      {
+        "symbol": "NEULANDLAB",
+        "score": 57,
+        "price": 23550.0,
+        "trend_up": true,
+        "breakout": false
+      },
+      {
+        "symbol": "HINDCOPPER",
+        "score": 55,
+        "price": 534.0,
         "trend_up": true,
         "breakout": false
       },
       {
         "symbol": "COFORGE",
-        "score": 52,
-        "price": 1933.1,
+        "score": 53,
+        "price": 1941.6,
         "trend_up": true,
         "breakout": false
       },
       {
-        "symbol": "GLAND",
-        "score": 52,
-        "price": 2945.1,
-        "trend_up": true,
-        "breakout": false
-      },
-      {
-        "symbol": "ETERNAL",
-        "score": 51,
-        "price": 321.6,
+        "symbol": "MCX",
+        "score": 53,
+        "price": 3315.2,
         "trend_up": true,
         "breakout": false
       }
     ]
   },
-  "last_updated": "2026-09-08T09:52:34.390180",
+  "last_updated": "2026-09-08T09:57:58.937764",
   "intraday": {
-    "last_scan_time": "2026-09-08T09:52:34.388731+05:30",
+    "last_scan_time": "2026-09-08T09:55:37.126408+05:30",
     "universe_size": 150,
     "evaluated": 150,
     "open_positions": 0,
