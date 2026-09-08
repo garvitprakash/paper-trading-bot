@@ -1,6 +1,6 @@
 {
   "swing": {
-    "last_scan_time": "2026-09-08T10:34:39.267537+05:30",
+    "last_scan_time": "2026-09-08T10:52:14.217054+05:30",
     "universe_size": 150,
     "evaluated": 150,
     "open_positions": 3,
@@ -8,65 +8,65 @@
     "top_candidates": [
       {
         "symbol": "PPLPHARMA",
-        "score": 100,
-        "price": 223.12,
+        "score": 98,
+        "price": 228.53,
         "trend_up": true,
         "breakout": true
       },
       {
         "symbol": "IIFL",
-        "score": 65,
-        "price": 640.9,
+        "score": 68,
+        "price": 643.0,
         "trend_up": true,
         "breakout": false
       },
       {
         "symbol": "WOCKPHARMA",
-        "score": 61,
-        "price": 2178.0,
+        "score": 62,
+        "price": 2187.9,
         "trend_up": true,
         "breakout": false
       },
       {
         "symbol": "NEULANDLAB",
-        "score": 60,
-        "price": 23730.0,
+        "score": 61,
+        "price": 23800.0,
         "trend_up": true,
         "breakout": false
       },
       {
         "symbol": "AUROPHARMA",
-        "score": 59,
-        "price": 1679.9,
+        "score": 60,
+        "price": 1681.0,
         "trend_up": true,
         "breakout": false
       },
       {
         "symbol": "HINDCOPPER",
         "score": 59,
-        "price": 535.8,
+        "price": 532.7,
+        "trend_up": true,
+        "breakout": false
+      },
+      {
+        "symbol": "PIRAMALFIN",
+        "score": 56,
+        "price": 2282.2,
         "trend_up": true,
         "breakout": false
       },
       {
         "symbol": "COFORGE",
         "score": 55,
-        "price": 1946.5,
-        "trend_up": true,
-        "breakout": false
-      },
-      {
-        "symbol": "PIRAMALFIN",
-        "score": 55,
-        "price": 2295.5,
+        "price": 1942.5,
         "trend_up": true,
         "breakout": false
       }
     ]
   },
-  "last_updated": "2026-09-08T10:46:35.778883",
+  "last_updated": "2026-09-08T10:52:14.218644",
   "intraday": {
-    "last_scan_time": "2026-09-08T10:46:35.777699+05:30",
+    "last_scan_time": "2026-09-08T10:49:58.493089+05:30",
     "universe_size": 150,
     "evaluated": 150,
     "open_positions": 0,
