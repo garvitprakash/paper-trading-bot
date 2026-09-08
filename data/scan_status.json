@@ -1,72 +1,72 @@
 {
   "swing": {
-    "last_scan_time": "2026-09-07T15:16:24.780771+05:30",
+    "last_scan_time": "2026-09-08T09:22:59.985040+05:30",
     "universe_size": 150,
     "evaluated": 150,
     "open_positions": 3,
     "cash": 36449.85,
     "top_candidates": [
       {
-        "symbol": "WOCKPHARMA",
-        "score": 99,
-        "price": 2210.1,
+        "symbol": "PPLPHARMA",
+        "score": 79,
+        "price": 223.52,
         "trend_up": true,
         "breakout": true
       },
       {
-        "symbol": "CUB",
-        "score": 75,
-        "price": 237.75,
-        "trend_up": true,
-        "breakout": false
-      },
-      {
         "symbol": "IIFL",
-        "score": 75,
-        "price": 656.9,
+        "score": 57,
+        "price": 663.05,
         "trend_up": true,
         "breakout": false
       },
       {
-        "symbol": "PPLPHARMA",
-        "score": 75,
-        "price": 219.77,
+        "symbol": "WOCKPHARMA",
+        "score": 53,
+        "price": 2218.9,
         "trend_up": true,
         "breakout": false
       },
       {
-        "symbol": "PIRAMALFIN",
-        "score": 72,
-        "price": 2263.4,
+        "symbol": "AUROPHARMA",
+        "score": 51,
+        "price": 1678.4,
         "trend_up": true,
         "breakout": false
       },
       {
-        "symbol": "ANANDRATHI",
-        "score": 71,
-        "price": 2225.7,
+        "symbol": "COFORGE",
+        "score": 51,
+        "price": 1920.2,
         "trend_up": true,
         "breakout": false
       },
       {
-        "symbol": "ANGELONE",
-        "score": 69,
-        "price": 303.55,
+        "symbol": "MCX",
+        "score": 51,
+        "price": 3329.0,
         "trend_up": true,
         "breakout": false
       },
       {
-        "symbol": "APLAPOLLO",
-        "score": 67,
-        "price": 2203.6,
+        "symbol": "SBICARD",
+        "score": 51,
+        "price": 669.8,
+        "trend_up": false,
+        "breakout": true
+      },
+      {
+        "symbol": "GLAND",
+        "score": 51,
+        "price": 2937.6,
         "trend_up": true,
         "breakout": false
       }
     ]
   },
-  "last_updated": "2026-09-08T09:17:17.418565",
+  "last_updated": "2026-09-08T09:22:59.986393",
   "intraday": {
-    "last_scan_time": "2026-09-08T09:17:17.416092+05:30",
+    "last_scan_time": "2026-09-08T09:20:20.893483+05:30",
     "universe_size": 150,
     "evaluated": 0,
     "open_positions": 0,
