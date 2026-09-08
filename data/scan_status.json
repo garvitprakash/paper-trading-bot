@@ -1,6 +1,6 @@
 {
   "swing": {
-    "last_scan_time": "2026-09-08T12:03:57.683931+05:30",
+    "last_scan_time": "2026-09-08T12:22:15.455373+05:30",
     "universe_size": 150,
     "evaluated": 150,
     "open_positions": 3,
@@ -9,64 +9,64 @@
       {
         "symbol": "PPLPHARMA",
         "score": 98,
-        "price": 227.85,
+        "price": 227.84,
         "trend_up": true,
         "breakout": true
       },
       {
         "symbol": "SAILIFE",
-        "score": 76,
-        "price": 1655.0,
+        "score": 79,
+        "price": 1654.8,
         "trend_up": true,
         "breakout": true
       },
       {
         "symbol": "IIFL",
-        "score": 72,
-        "price": 645.9,
+        "score": 71,
+        "price": 644.5,
         "trend_up": true,
         "breakout": false
       },
       {
         "symbol": "AUROPHARMA",
+        "score": 65,
+        "price": 1687.0,
+        "trend_up": true,
+        "breakout": false
+      },
+      {
+        "symbol": "NEULANDLAB",
         "score": 64,
-        "price": 1690.2,
+        "price": 23700.0,
         "trend_up": true,
         "breakout": false
       },
       {
         "symbol": "WOCKPHARMA",
         "score": 64,
-        "price": 2199.8,
-        "trend_up": true,
-        "breakout": false
-      },
-      {
-        "symbol": "NEULANDLAB",
-        "score": 63,
-        "price": 23720.0,
+        "price": 2214.1,
         "trend_up": true,
         "breakout": false
       },
       {
         "symbol": "NYKAA",
-        "score": 60,
-        "price": 341.05,
+        "score": 61,
+        "price": 340.0,
         "trend_up": true,
         "breakout": false
       },
       {
         "symbol": "KOTAKBANK",
         "score": 59,
-        "price": 422.45,
+        "price": 421.1,
         "trend_up": true,
         "breakout": false
       }
     ]
   },
-  "last_updated": "2026-09-08T12:14:57.381400",
+  "last_updated": "2026-09-08T12:22:15.456735",
   "intraday": {
-    "last_scan_time": "2026-09-08T12:14:57.380057+05:30",
+    "last_scan_time": "2026-09-08T12:18:45.115347+05:30",
     "universe_size": 150,
     "evaluated": 150,
     "open_positions": 0,
