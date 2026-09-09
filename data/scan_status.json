@@ -1,70 +1,70 @@
 {
   "swing": {
-    "last_scan_time": "2026-09-09T12:06:38.079936+05:30",
+    "last_scan_time": "2026-09-09T15:01:09.648460+05:30",
     "universe_size": 150,
     "evaluated": 150,
     "open_positions": 3,
     "cash": 38239.65,
     "top_candidates": [
       {
-        "symbol": "NAVINFLUOR",
-        "score": 99,
-        "price": 8881.0,
+        "symbol": "ADANIPORTS",
+        "score": 100,
+        "price": 1775.9,
         "trend_up": true,
         "breakout": true
       },
       {
         "symbol": "PAYTM",
-        "score": 95,
-        "price": 1737.0,
+        "score": 100,
+        "price": 1752.3,
         "trend_up": true,
         "breakout": true
       },
       {
-        "symbol": "ADANIPORTS",
-        "score": 87,
-        "price": 1752.2,
+        "symbol": "NAVINFLUOR",
+        "score": 100,
+        "price": 8795.0,
         "trend_up": true,
         "breakout": true
       },
       {
         "symbol": "WOCKPHARMA",
-        "score": 85,
-        "price": 2253.3,
-        "trend_up": true,
-        "breakout": true
-      },
-      {
-        "symbol": "RBLBANK",
-        "score": 77,
-        "price": 419.35,
+        "score": 92,
+        "price": 2251.2,
         "trend_up": true,
         "breakout": true
       },
       {
         "symbol": "SAILIFE",
-        "score": 77,
-        "price": 1675.4,
+        "score": 86,
+        "price": 1679.4,
         "trend_up": true,
         "breakout": true
       },
       {
         "symbol": "ADANIENT",
         "score": 75,
-        "price": 3132.0,
+        "price": 3101.5,
         "trend_up": true,
         "breakout": false
       },
       {
+        "symbol": "COALINDIA",
+        "score": 75,
+        "price": 432.9,
+        "trend_up": false,
+        "breakout": true
+      },
+      {
         "symbol": "AEGISLOG",
-        "score": 74,
-        "price": 1332.7,
+        "score": 75,
+        "price": 1343.9,
         "trend_up": true,
         "breakout": false
       }
     ]
   },
-  "last_updated": "2026-09-09T13:32:31.085005",
+  "last_updated": "2026-09-09T15:01:09.655401",
   "intraday": {
     "last_scan_time": "2026-09-09T13:32:31.083800+05:30",
     "universe_size": 150,
