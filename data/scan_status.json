@@ -1,70 +1,70 @@
 {
   "swing": {
-    "last_scan_time": "2026-09-08T15:26:40.282725+05:30",
+    "last_scan_time": "2026-09-09T12:06:38.079936+05:30",
     "universe_size": 150,
     "evaluated": 150,
     "open_positions": 3,
-    "cash": 36449.85,
+    "cash": 38239.65,
     "top_candidates": [
       {
-        "symbol": "NEULANDLAB",
-        "score": 100,
-        "price": 24045.0,
-        "trend_up": true,
-        "breakout": true
-      },
-      {
-        "symbol": "PPLPHARMA",
-        "score": 100,
-        "price": 226.0,
-        "trend_up": true,
-        "breakout": true
-      },
-      {
         "symbol": "NAVINFLUOR",
-        "score": 89,
-        "price": 8746.0,
+        "score": 99,
+        "price": 8881.0,
         "trend_up": true,
         "breakout": true
       },
       {
-        "symbol": "SAILIFE",
-        "score": 89,
-        "price": 1650.4,
+        "symbol": "PAYTM",
+        "score": 95,
+        "price": 1737.0,
+        "trend_up": true,
+        "breakout": true
+      },
+      {
+        "symbol": "ADANIPORTS",
+        "score": 87,
+        "price": 1752.2,
+        "trend_up": true,
+        "breakout": true
+      },
+      {
+        "symbol": "WOCKPHARMA",
+        "score": 85,
+        "price": 2253.3,
         "trend_up": true,
         "breakout": true
       },
       {
         "symbol": "RBLBANK",
         "score": 77,
-        "price": 419.0,
+        "price": 419.35,
         "trend_up": true,
         "breakout": true
       },
       {
-        "symbol": "APLAPOLLO",
-        "score": 72,
-        "price": 2180.0,
+        "symbol": "SAILIFE",
+        "score": 77,
+        "price": 1675.4,
+        "trend_up": true,
+        "breakout": true
+      },
+      {
+        "symbol": "ADANIENT",
+        "score": 75,
+        "price": 3132.0,
         "trend_up": true,
         "breakout": false
       },
       {
-        "symbol": "PIRAMALFIN",
-        "score": 71,
-        "price": 2296.8,
-        "trend_up": true,
-        "breakout": false
-      },
-      {
-        "symbol": "WOCKPHARMA",
-        "score": 71,
-        "price": 2226.0,
+        "symbol": "AEGISLOG",
+        "score": 74,
+        "price": 1332.7,
         "trend_up": true,
         "breakout": false
       }
     ]
   },
-  "last_updated": "2026-09-09T10:38:06.603111",
+  "last_updated": "2026-09-09T12:06:38.081249",
   "intraday": {
     "last_scan_time": "2026-09-09T10:38:06.600994+05:30",
     "universe_size": 150,

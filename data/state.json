@@ -1,19 +1,7 @@
 {
-  "swing_cash": 36449.85,
+  "swing_cash": 38239.65,
   "intraday_cash": 50000,
   "positions": [
-    {
-      "id": "COFORGE-1787203630.000603",
-      "type": "swing",
-      "symbol": "COFORGE",
-      "name": "COFORGE",
-      "qty": 2,
-      "entry": 1871.1,
-      "entry_date": "2026-08-20T10:57:10.000691",
-      "stop": 1796.2559999999999,
-      "target": 2039.499,
-      "peak": 1977.8
-    },
     {
       "id": "OIL-1788150290.584043",
       "type": "swing",
@@ -24,19 +12,31 @@
       "entry_date": "2026-08-31T09:54:50.584113",
       "stop": 470.88,
       "target": 534.6450000000001,
-      "peak": 490.9
+      "peak": 500.05
     },
     {
-      "id": "SAILIFE-1788241450.305756",
+      "id": "PAYTM-1788935775.348721",
       "type": "swing",
-      "symbol": "SAILIFE",
-      "name": "SAILIFE",
-      "qty": 3,
-      "entry": 1528.0,
-      "entry_date": "2026-09-01T11:14:10.305843",
-      "stop": 1466.8799999999999,
-      "target": 1665.5200000000002,
-      "peak": 1528.0
+      "symbol": "PAYTM",
+      "name": "PAYTM",
+      "qty": 2,
+      "entry": 1737.0,
+      "entry_date": "2026-09-09T12:06:15.348794",
+      "stop": 1667.52,
+      "target": 1893.3300000000002,
+      "peak": 1737.0
+    },
+    {
+      "id": "ADANIPORTS-1788935787.021116",
+      "type": "swing",
+      "symbol": "ADANIPORTS",
+      "name": "ADANIPORTS",
+      "qty": 2,
+      "entry": 1752.2,
+      "entry_date": "2026-09-09T12:06:27.021185",
+      "stop": 1682.112,
+      "target": 1909.8980000000001,
+      "peak": 1752.2
     }
   ],
   "history": [
@@ -65,6 +65,32 @@
       "sale_amount": 4772.25,
       "profit": -135.75,
       "reason": "Trend Weak (20 EMA se neeche)"
+    },
+    {
+      "type": "swing",
+      "symbol": "COFORGE",
+      "name": "COFORGE",
+      "purchase_date": "2026-08-20T10:57:10.000691",
+      "qty": 2,
+      "purchase_amount": 3742.2,
+      "sale_date": "2026-09-09T12:05:52.659584",
+      "sale_qty": 2,
+      "sale_amount": 3742.0,
+      "profit": -0.1999999999998181,
+      "reason": "Trailing Stop"
+    },
+    {
+      "type": "swing",
+      "symbol": "SAILIFE",
+      "name": "SAILIFE",
+      "purchase_date": "2026-09-01T11:14:10.305843",
+      "qty": 3,
+      "purchase_amount": 4584.0,
+      "sale_date": "2026-09-09T12:06:04.085639",
+      "sale_qty": 3,
+      "sale_amount": 5026.200000000001,
+      "profit": 442.2000000000007,
+      "reason": "Target Hit"
     }
   ]
 }
