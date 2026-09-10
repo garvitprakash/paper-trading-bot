@@ -1,72 +1,72 @@
 {
   "swing": {
-    "last_scan_time": "2026-09-09T15:01:09.648460+05:30",
+    "last_scan_time": "2026-09-10T09:19:31.608676+05:30",
     "universe_size": 150,
     "evaluated": 150,
     "open_positions": 3,
     "cash": 38239.65,
     "top_candidates": [
       {
-        "symbol": "ADANIPORTS",
-        "score": 100,
-        "price": 1775.9,
+        "symbol": "REDINGTON",
+        "score": 83,
+        "price": 391.25,
         "trend_up": true,
         "breakout": true
       },
       {
-        "symbol": "PAYTM",
-        "score": 100,
-        "price": 1752.3,
-        "trend_up": true,
-        "breakout": true
-      },
-      {
-        "symbol": "NAVINFLUOR",
-        "score": 100,
-        "price": 8795.0,
-        "trend_up": true,
-        "breakout": true
-      },
-      {
-        "symbol": "WOCKPHARMA",
-        "score": 92,
-        "price": 2251.2,
-        "trend_up": true,
-        "breakout": true
-      },
-      {
-        "symbol": "SAILIFE",
-        "score": 86,
-        "price": 1679.4,
-        "trend_up": true,
-        "breakout": true
-      },
-      {
-        "symbol": "ADANIENT",
+        "symbol": "OIL",
         "score": 75,
-        "price": 3101.5,
+        "price": 513.0,
         "trend_up": true,
-        "breakout": false
-      },
-      {
-        "symbol": "COALINDIA",
-        "score": 75,
-        "price": 432.9,
-        "trend_up": false,
         "breakout": true
       },
       {
         "symbol": "AEGISLOG",
-        "score": 75,
-        "price": 1343.9,
+        "score": 52,
+        "price": 1377.1,
+        "trend_up": true,
+        "breakout": false
+      },
+      {
+        "symbol": "ADANIENT",
+        "score": 51,
+        "price": 3094.6,
+        "trend_up": true,
+        "breakout": false
+      },
+      {
+        "symbol": "ADANIPORTS",
+        "score": 51,
+        "price": 1764.5,
+        "trend_up": true,
+        "breakout": false
+      },
+      {
+        "symbol": "APOLLOHOSP",
+        "score": 51,
+        "price": 8983.5,
+        "trend_up": true,
+        "breakout": false
+      },
+      {
+        "symbol": "AUROPHARMA",
+        "score": 51,
+        "price": 1677.0,
+        "trend_up": true,
+        "breakout": false
+      },
+      {
+        "symbol": "NYKAA",
+        "score": 51,
+        "price": 341.8,
         "trend_up": true,
         "breakout": false
       }
     ]
   },
-  "last_updated": "2026-09-10T09:17:17.779509",
+  "last_updated": "2026-09-10T09:24:33.992506",
   "intraday": {
-    "last_scan_time": "2026-09-10T09:17:17.777027+05:30",
+    "last_scan_time": "2026-09-10T09:24:33.991386+05:30",
     "universe_size": 150,
     "evaluated": 0,
     "open_positions": 0,
