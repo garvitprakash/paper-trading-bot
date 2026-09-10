@@ -1,72 +1,72 @@
 {
   "swing": {
-    "last_scan_time": "2026-09-10T10:33:00.795922+05:30",
+    "last_scan_time": "2026-09-10T10:51:48.066664+05:30",
     "universe_size": 150,
     "evaluated": 150,
     "open_positions": 3,
     "cash": 38239.65,
     "top_candidates": [
       {
-        "symbol": "REDINGTON",
-        "score": 100,
-        "price": 383.85,
+        "symbol": "OIL",
+        "score": 90,
+        "price": 509.15,
         "trend_up": true,
         "breakout": true
       },
       {
-        "symbol": "OIL",
-        "score": 88,
-        "price": 510.7,
+        "symbol": "REDINGTON",
+        "score": 75,
+        "price": 381.8,
         "trend_up": true,
-        "breakout": true
+        "breakout": false
+      },
+      {
+        "symbol": "ADANIPORTS",
+        "score": 59,
+        "price": 1769.6,
+        "trend_up": true,
+        "breakout": false
       },
       {
         "symbol": "AEGISLOG",
         "score": 59,
-        "price": 1326.4,
+        "price": 1323.4,
+        "trend_up": true,
+        "breakout": false
+      },
+      {
+        "symbol": "SAILIFE",
+        "score": 59,
+        "price": 1619.2,
         "trend_up": true,
         "breakout": false
       },
       {
         "symbol": "IDFCFIRSTB",
         "score": 58,
-        "price": 86.97,
-        "trend_up": true,
-        "breakout": false
-      },
-      {
-        "symbol": "ADANIPORTS",
-        "score": 57,
-        "price": 1766.2,
-        "trend_up": true,
-        "breakout": false
-      },
-      {
-        "symbol": "SAILIFE",
-        "score": 56,
-        "price": 1624.8,
+        "price": 86.81,
         "trend_up": true,
         "breakout": false
       },
       {
         "symbol": "ADANIENT",
-        "score": 55,
-        "price": 3070.0,
+        "score": 56,
+        "price": 3087.0,
         "trend_up": true,
         "breakout": false
       },
       {
         "symbol": "NEULANDLAB",
-        "score": 55,
-        "price": 23775.0,
+        "score": 56,
+        "price": 23820.0,
         "trend_up": true,
         "breakout": false
       }
     ]
   },
-  "last_updated": "2026-09-10T10:46:02.753334",
+  "last_updated": "2026-09-10T10:51:48.067919",
   "intraday": {
-    "last_scan_time": "2026-09-10T10:46:02.752136+05:30",
+    "last_scan_time": "2026-09-10T10:49:18.018809+05:30",
     "universe_size": 150,
     "evaluated": 150,
     "open_positions": 0,
