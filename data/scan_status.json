@@ -1,6 +1,6 @@
 {
   "swing": {
-    "last_scan_time": "2026-09-10T13:44:42.222337+05:30",
+    "last_scan_time": "2026-09-10T14:02:43.626799+05:30",
     "universe_size": 150,
     "evaluated": 150,
     "open_positions": 3,
@@ -9,64 +9,64 @@
       {
         "symbol": "REDINGTON",
         "score": 98,
-        "price": 394.3,
+        "price": 395.0,
         "trend_up": true,
         "breakout": true
       },
       {
         "symbol": "OIL",
         "score": 75,
-        "price": 501.6,
+        "price": 499.6,
         "trend_up": true,
         "breakout": false
       },
       {
         "symbol": "ANANDRATHI",
-        "score": 73,
-        "price": 2178.7,
+        "score": 72,
+        "price": 2177.3,
         "trend_up": true,
         "breakout": false
       },
       {
         "symbol": "SAILIFE",
-        "score": 67,
-        "price": 1607.1,
+        "score": 68,
+        "price": 1598.3,
         "trend_up": true,
         "breakout": false
       },
       {
         "symbol": "WELCORP",
-        "score": 67,
-        "price": 2763.3,
+        "score": 68,
+        "price": 2769.4,
         "trend_up": true,
         "breakout": true
       },
       {
         "symbol": "ADANIPORTS",
         "score": 64,
-        "price": 1767.7,
+        "price": 1765.5,
+        "trend_up": true,
+        "breakout": false
+      },
+      {
+        "symbol": "AEGISLOG",
+        "score": 63,
+        "price": 1309.0,
         "trend_up": true,
         "breakout": false
       },
       {
         "symbol": "IDFCFIRSTB",
         "score": 62,
-        "price": 86.7,
-        "trend_up": true,
-        "breakout": false
-      },
-      {
-        "symbol": "AEGISLOG",
-        "score": 62,
-        "price": 1306.4,
+        "price": 86.74,
         "trend_up": true,
         "breakout": false
       }
     ]
   },
-  "last_updated": "2026-09-10T13:59:00.509719",
+  "last_updated": "2026-09-10T14:05:03.903922",
   "intraday": {
-    "last_scan_time": "2026-09-10T13:59:00.508462+05:30",
+    "last_scan_time": "2026-09-10T14:05:03.902752+05:30",
     "universe_size": 150,
     "evaluated": 150,
     "open_positions": 0,
