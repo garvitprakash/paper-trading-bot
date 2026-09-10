@@ -1,6 +1,6 @@
 {
   "swing": {
-    "last_scan_time": "2026-09-10T09:37:10.483506+05:30",
+    "last_scan_time": "2026-09-10T09:56:40.820471+05:30",
     "universe_size": 150,
     "evaluated": 150,
     "open_positions": 3,
@@ -8,65 +8,65 @@
     "top_candidates": [
       {
         "symbol": "REDINGTON",
-        "score": 93,
-        "price": 383.25,
+        "score": 96,
+        "price": 386.7,
         "trend_up": true,
         "breakout": true
       },
       {
         "symbol": "OIL",
-        "score": 81,
-        "price": 510.85,
+        "score": 85,
+        "price": 509.4,
         "trend_up": true,
         "breakout": true
       },
       {
         "symbol": "AEGISLOG",
-        "score": 56,
-        "price": 1354.3,
-        "trend_up": true,
-        "breakout": false
-      },
-      {
-        "symbol": "ADANIPORTS",
-        "score": 53,
-        "price": 1756.9,
-        "trend_up": true,
-        "breakout": false
-      },
-      {
-        "symbol": "AUROPHARMA",
-        "score": 53,
-        "price": 1663.7,
-        "trend_up": true,
-        "breakout": false
-      },
-      {
-        "symbol": "NEULANDLAB",
-        "score": 53,
-        "price": 23575.0,
-        "trend_up": true,
-        "breakout": false
-      },
-      {
-        "symbol": "APOLLOHOSP",
-        "score": 52,
-        "price": 8980.0,
+        "score": 58,
+        "price": 1352.0,
         "trend_up": true,
         "breakout": false
       },
       {
         "symbol": "IDFCFIRSTB",
-        "score": 52,
-        "price": 86.99,
+        "score": 56,
+        "price": 87.23,
+        "trend_up": true,
+        "breakout": false
+      },
+      {
+        "symbol": "ADANIPORTS",
+        "score": 55,
+        "price": 1768.0,
+        "trend_up": true,
+        "breakout": false
+      },
+      {
+        "symbol": "AUROPHARMA",
+        "score": 54,
+        "price": 1671.2,
+        "trend_up": true,
+        "breakout": false
+      },
+      {
+        "symbol": "NEULANDLAB",
+        "score": 54,
+        "price": 23770.0,
+        "trend_up": true,
+        "breakout": false
+      },
+      {
+        "symbol": "ADANIENT",
+        "score": 53,
+        "price": 3071.3,
         "trend_up": true,
         "breakout": false
       }
     ]
   },
-  "last_updated": "2026-09-10T09:49:26.402120",
+  "last_updated": "2026-09-10T09:56:40.822023",
   "intraday": {
-    "last_scan_time": "2026-09-10T09:49:26.400818+05:30",
+    "last_scan_time": "2026-09-10T09:53:12.758395+05:30",
     "universe_size": 150,
     "evaluated": 150,
     "open_positions": 0,
