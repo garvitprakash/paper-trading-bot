@@ -1,6 +1,6 @@
 {
   "swing": {
-    "last_scan_time": "2026-09-11T10:38:45.109017+05:30",
+    "last_scan_time": "2026-09-11T13:37:27.880141+05:30",
     "universe_size": 150,
     "evaluated": 150,
     "open_positions": 3,
@@ -8,63 +8,63 @@
     "top_candidates": [
       {
         "symbol": "PAYTM",
-        "score": 82,
-        "price": 1782.1,
+        "score": 99,
+        "price": 1807.1,
         "trend_up": true,
         "breakout": true
       },
       {
-        "symbol": "OIL",
-        "score": 65,
-        "price": 499.8,
+        "symbol": "LAURUSLABS",
+        "score": 81,
+        "price": 1966.4,
         "trend_up": true,
-        "breakout": false
+        "breakout": true
       },
       {
-        "symbol": "PNBHOUSING",
-        "score": 62,
-        "price": 1181.4,
+        "symbol": "YESBANK",
+        "score": 75,
+        "price": 23.02,
         "trend_up": true,
         "breakout": false
       },
       {
         "symbol": "FIVESTAR",
-        "score": 59,
-        "price": 545.95,
+        "score": 75,
+        "price": 551.9,
+        "trend_up": true,
+        "breakout": false
+      },
+      {
+        "symbol": "OIL",
+        "score": 74,
+        "price": 495.0,
+        "trend_up": true,
+        "breakout": false
+      },
+      {
+        "symbol": "PNBHOUSING",
+        "score": 70,
+        "price": 1179.8,
         "trend_up": true,
         "breakout": false
       },
       {
         "symbol": "SAILIFE",
-        "score": 58,
-        "price": 1596.0,
+        "score": 70,
+        "price": 1585.0,
         "trend_up": true,
         "breakout": false
       },
       {
-        "symbol": "RBLBANK",
-        "score": 56,
-        "price": 408.8,
-        "trend_up": true,
-        "breakout": false
-      },
-      {
-        "symbol": "WOCKPHARMA",
-        "score": 56,
-        "price": 2227.0,
-        "trend_up": true,
-        "breakout": false
-      },
-      {
-        "symbol": "LALPATHLAB",
-        "score": 55,
-        "price": 1913.5,
+        "symbol": "AEGISLOG",
+        "score": 67,
+        "price": 1349.9,
         "trend_up": true,
         "breakout": false
       }
     ]
   },
-  "last_updated": "2026-09-11T12:07:43.676305",
+  "last_updated": "2026-09-11T13:37:27.886399",
   "intraday": {
     "last_scan_time": "2026-09-11T12:07:43.675076+05:30",
     "universe_size": 150,
