@@ -1,6 +1,6 @@
 {
   "swing": {
-    "last_scan_time": "2026-09-15T09:19:21.316603+05:30",
+    "last_scan_time": "2026-09-15T09:36:59.821108+05:30",
     "universe_size": 150,
     "evaluated": 150,
     "open_positions": 3,
@@ -8,67 +8,67 @@
     "top_candidates": [
       {
         "symbol": "TATACHEM",
-        "score": 70,
+        "score": 71,
         "price": 734.9,
         "trend_up": false,
         "breakout": true
       },
       {
         "symbol": "TECHM",
-        "score": 53,
-        "price": 1628.8,
-        "trend_up": true,
-        "breakout": false
-      },
-      {
-        "symbol": "YESBANK",
-        "score": 53,
-        "price": 23.54,
+        "score": 57,
+        "price": 1620.0,
         "trend_up": true,
         "breakout": false
       },
       {
         "symbol": "PERSISTENT",
-        "score": 52,
-        "price": 5710.0,
+        "score": 57,
+        "price": 5742.0,
+        "trend_up": true,
+        "breakout": false
+      },
+      {
+        "symbol": "YESBANK",
+        "score": 56,
+        "price": 23.35,
+        "trend_up": true,
+        "breakout": false
+      },
+      {
+        "symbol": "AEGISLOG",
+        "score": 54,
+        "price": 1345.1,
         "trend_up": true,
         "breakout": false
       },
       {
         "symbol": "ANGELONE",
-        "score": 52,
-        "price": 307.4,
+        "score": 54,
+        "price": 303.45,
+        "trend_up": true,
+        "breakout": false
+      },
+      {
+        "symbol": "PAYTM",
+        "score": 53,
+        "price": 1775.3,
         "trend_up": true,
         "breakout": false
       },
       {
         "symbol": "FIVESTAR",
-        "score": 52,
-        "price": 546.7,
-        "trend_up": true,
-        "breakout": false
-      },
-      {
-        "symbol": "ADANIPORTS",
-        "score": 51,
-        "price": 1763.2,
-        "trend_up": true,
-        "breakout": false
-      },
-      {
-        "symbol": "APOLLOHOSP",
-        "score": 51,
-        "price": 8912.0,
+        "score": 53,
+        "price": 551.55,
         "trend_up": true,
         "breakout": false
       }
     ]
   },
-  "last_updated": "2026-09-15T09:31:38.650118",
+  "last_updated": "2026-09-15T09:36:59.822392",
   "intraday": {
-    "last_scan_time": "2026-09-15T09:31:38.648996+05:30",
+    "last_scan_time": "2026-09-15T09:34:41.855692+05:30",
     "universe_size": 150,
-    "evaluated": 31,
+    "evaluated": 150,
     "open_positions": 0,
     "cash": 50000,
     "square_off_time": false,
