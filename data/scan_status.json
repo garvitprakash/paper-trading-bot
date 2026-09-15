@@ -1,6 +1,6 @@
 {
   "swing": {
-    "last_scan_time": "2026-09-15T14:42:58.149979+05:30",
+    "last_scan_time": "2026-09-15T15:00:35.323727+05:30",
     "universe_size": 150,
     "evaluated": 150,
     "open_positions": 3,
@@ -8,8 +8,8 @@
     "top_candidates": [
       {
         "symbol": "YESBANK",
-        "score": 73,
-        "price": 23.23,
+        "score": 74,
+        "price": 23.18,
         "trend_up": true,
         "breakout": false
       },
@@ -22,51 +22,51 @@
       },
       {
         "symbol": "IDFCFIRSTB",
-        "score": 67,
-        "price": 85.42,
-        "trend_up": true,
-        "breakout": false
-      },
-      {
-        "symbol": "MAXHEALTH",
         "score": 66,
-        "price": 1042.3,
-        "trend_up": false,
-        "breakout": true
-      },
-      {
-        "symbol": "PERSISTENT",
-        "score": 63,
-        "price": 5508.5,
-        "trend_up": true,
-        "breakout": false
-      },
-      {
-        "symbol": "TECHM",
-        "score": 62,
-        "price": 1583.3,
-        "trend_up": true,
-        "breakout": false
-      },
-      {
-        "symbol": "WELCORP",
-        "score": 62,
-        "price": 2440.5,
+        "price": 85.25,
         "trend_up": true,
         "breakout": false
       },
       {
         "symbol": "KOTAKBANK",
+        "score": 64,
+        "price": 413.95,
+        "trend_up": true,
+        "breakout": false
+      },
+      {
+        "symbol": "TECHM",
+        "score": 63,
+        "price": 1582.1,
+        "trend_up": true,
+        "breakout": false
+      },
+      {
+        "symbol": "WELCORP",
+        "score": 63,
+        "price": 2406.0,
+        "trend_up": true,
+        "breakout": false
+      },
+      {
+        "symbol": "PAYTM",
+        "score": 62,
+        "price": 1734.0,
+        "trend_up": true,
+        "breakout": false
+      },
+      {
+        "symbol": "PERSISTENT",
         "score": 61,
-        "price": 413.55,
+        "price": 5482.0,
         "trend_up": true,
         "breakout": false
       }
     ]
   },
-  "last_updated": "2026-09-15T14:54:39.624948",
+  "last_updated": "2026-09-15T15:00:35.325274",
   "intraday": {
-    "last_scan_time": "2026-09-15T14:54:39.623673+05:30",
+    "last_scan_time": "2026-09-15T14:57:41.539866+05:30",
     "universe_size": 150,
     "evaluated": 150,
     "open_positions": 0,
