@@ -1,6 +1,6 @@
 {
   "swing": {
-    "last_scan_time": "2026-09-15T12:55:59.821129+05:30",
+    "last_scan_time": "2026-09-15T13:13:45.054920+05:30",
     "universe_size": 150,
     "evaluated": 150,
     "open_positions": 3,
@@ -15,58 +15,58 @@
       },
       {
         "symbol": "YESBANK",
-        "score": 68,
-        "price": 23.36,
+        "score": 69,
+        "price": 23.37,
         "trend_up": true,
         "breakout": false
       },
       {
         "symbol": "TECHM",
-        "score": 63,
-        "price": 1594.3,
+        "score": 62,
+        "price": 1587.9,
         "trend_up": true,
         "breakout": false
       },
       {
         "symbol": "PERSISTENT",
-        "score": 62,
-        "price": 5546.5,
+        "score": 61,
+        "price": 5528.0,
         "trend_up": true,
         "breakout": false
       },
       {
         "symbol": "IDFCFIRSTB",
-        "score": 60,
-        "price": 85.87,
+        "score": 59,
+        "price": 85.73,
         "trend_up": true,
         "breakout": false
       },
       {
         "symbol": "PAYTM",
         "score": 59,
-        "price": 1760.7,
+        "price": 1758.4,
         "trend_up": true,
         "breakout": false
       },
       {
-        "symbol": "AEGISLOG",
+        "symbol": "FIVESTAR",
         "score": 59,
-        "price": 1342.6,
+        "price": 544.9,
         "trend_up": true,
         "breakout": false
       },
       {
-        "symbol": "NEULANDLAB",
+        "symbol": "WOCKPHARMA",
         "score": 59,
-        "price": 22970.0,
+        "price": 2114.1,
         "trend_up": true,
         "breakout": false
       }
     ]
   },
-  "last_updated": "2026-09-15T13:11:29.189887",
+  "last_updated": "2026-09-15T13:18:46.769946",
   "intraday": {
-    "last_scan_time": "2026-09-15T13:11:29.188702+05:30",
+    "last_scan_time": "2026-09-15T13:18:46.768699+05:30",
     "universe_size": 150,
     "evaluated": 150,
     "open_positions": 0,
