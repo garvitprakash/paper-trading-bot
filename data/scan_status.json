@@ -1,6 +1,6 @@
 {
   "swing": {
-    "last_scan_time": "2026-09-15T11:25:42.888905+05:30",
+    "last_scan_time": "2026-09-15T11:44:09.465048+05:30",
     "universe_size": 150,
     "evaluated": 150,
     "open_positions": 3,
@@ -14,37 +14,44 @@
         "breakout": true
       },
       {
-        "symbol": "TECHM",
-        "score": 63,
-        "price": 1613.5,
-        "trend_up": true,
-        "breakout": false
-      },
-      {
         "symbol": "PERSISTENT",
-        "score": 63,
-        "price": 5634.5,
+        "score": 64,
+        "price": 5625.0,
         "trend_up": true,
         "breakout": false
       },
       {
         "symbol": "YESBANK",
-        "score": 62,
-        "price": 23.01,
+        "score": 64,
+        "price": 23.11,
+        "trend_up": true,
+        "breakout": false
+      },
+      {
+        "symbol": "TECHM",
+        "score": 63,
+        "price": 1607.8,
+        "trend_up": true,
+        "breakout": false
+      },
+      {
+        "symbol": "PAYTM",
+        "score": 58,
+        "price": 1758.0,
         "trend_up": true,
         "breakout": false
       },
       {
         "symbol": "AEGISLOG",
         "score": 58,
-        "price": 1354.7,
+        "price": 1353.0,
         "trend_up": true,
         "breakout": false
       },
       {
-        "symbol": "PAYTM",
-        "score": 57,
-        "price": 1763.6,
+        "symbol": "NEULANDLAB",
+        "score": 58,
+        "price": 22950.0,
         "trend_up": true,
         "breakout": false
       },
@@ -54,19 +61,12 @@
         "price": 302.55,
         "trend_up": true,
         "breakout": false
-      },
-      {
-        "symbol": "FIVESTAR",
-        "score": 57,
-        "price": 545.25,
-        "trend_up": true,
-        "breakout": false
       }
     ]
   },
-  "last_updated": "2026-09-15T11:37:53.089281",
+  "last_updated": "2026-09-15T11:44:09.466325",
   "intraday": {
-    "last_scan_time": "2026-09-15T11:37:53.088107+05:30",
+    "last_scan_time": "2026-09-15T11:41:10.380499+05:30",
     "universe_size": 150,
     "evaluated": 150,
     "open_positions": 0,
