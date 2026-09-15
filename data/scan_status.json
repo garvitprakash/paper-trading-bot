@@ -1,72 +1,72 @@
 {
   "swing": {
-    "last_scan_time": "2026-09-14T15:20:46.943006+05:30",
+    "last_scan_time": "2026-09-15T09:19:21.316603+05:30",
     "universe_size": 150,
     "evaluated": 150,
     "open_positions": 3,
     "cash": 38239.65,
     "top_candidates": [
       {
-        "symbol": "YESBANK",
-        "score": 100,
-        "price": 23.48,
-        "trend_up": true,
+        "symbol": "TATACHEM",
+        "score": 70,
+        "price": 734.9,
+        "trend_up": false,
         "breakout": true
+      },
+      {
+        "symbol": "TECHM",
+        "score": 53,
+        "price": 1628.8,
+        "trend_up": true,
+        "breakout": false
+      },
+      {
+        "symbol": "YESBANK",
+        "score": 53,
+        "price": 23.54,
+        "trend_up": true,
+        "breakout": false
+      },
+      {
+        "symbol": "PERSISTENT",
+        "score": 52,
+        "price": 5710.0,
+        "trend_up": true,
+        "breakout": false
+      },
+      {
+        "symbol": "ANGELONE",
+        "score": 52,
+        "price": 307.4,
+        "trend_up": true,
+        "breakout": false
       },
       {
         "symbol": "FIVESTAR",
-        "score": 100,
-        "price": 555.45,
-        "trend_up": true,
-        "breakout": true
-      },
-      {
-        "symbol": "PAYTM",
-        "score": 99,
-        "price": 1807.5,
-        "trend_up": true,
-        "breakout": true
-      },
-      {
-        "symbol": "LAURUSLABS",
-        "score": 86,
-        "price": 1969.0,
-        "trend_up": true,
-        "breakout": true
-      },
-      {
-        "symbol": "OIL",
-        "score": 75,
-        "price": 489.8,
+        "score": 52,
+        "price": 546.7,
         "trend_up": true,
         "breakout": false
       },
       {
-        "symbol": "PNBHOUSING",
-        "score": 75,
-        "price": 1178.9,
+        "symbol": "ADANIPORTS",
+        "score": 51,
+        "price": 1763.2,
         "trend_up": true,
         "breakout": false
       },
       {
-        "symbol": "SAILIFE",
-        "score": 74,
-        "price": 1585.0,
-        "trend_up": true,
-        "breakout": false
-      },
-      {
-        "symbol": "AEGISLOG",
-        "score": 73,
-        "price": 1353.0,
+        "symbol": "APOLLOHOSP",
+        "score": 51,
+        "price": 8912.0,
         "trend_up": true,
         "breakout": false
       }
     ]
   },
-  "last_updated": "2026-09-15T09:17:03.728747",
+  "last_updated": "2026-09-15T09:24:38.996550",
   "intraday": {
-    "last_scan_time": "2026-09-15T09:17:03.725566+05:30",
+    "last_scan_time": "2026-09-15T09:24:38.995333+05:30",
     "universe_size": 150,
     "evaluated": 0,
     "open_positions": 0,
