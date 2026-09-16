@@ -64,9 +64,9 @@
       }
     ]
   },
-  "last_updated": "2026-09-16T14:44:30.700136",
+  "last_updated": "2026-09-16T14:49:40.965806",
   "intraday": {
-    "last_scan_time": "2026-09-16T14:44:30.698749+05:30",
+    "last_scan_time": "2026-09-16T14:49:40.964624+05:30",
     "universe_size": 150,
     "evaluated": 150,
     "open_positions": 0,
