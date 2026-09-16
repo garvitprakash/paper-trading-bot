@@ -1,6 +1,6 @@
 {
   "swing": {
-    "last_scan_time": "2026-09-16T11:26:19.878499+05:30",
+    "last_scan_time": "2026-09-16T11:45:08.034938+05:30",
     "universe_size": 150,
     "evaluated": 150,
     "open_positions": 1,
@@ -9,64 +9,64 @@
       {
         "symbol": "PAYTM",
         "score": 75,
-        "price": 1745.6,
+        "price": 1753.0,
         "trend_up": true,
         "breakout": false
       },
       {
         "symbol": "YESBANK",
         "score": 75,
-        "price": 23.56,
+        "price": 23.47,
         "trend_up": true,
         "breakout": false
       },
       {
         "symbol": "AEGISLOG",
-        "score": 71,
-        "price": 1372.6,
+        "score": 72,
+        "price": 1378.2,
         "trend_up": true,
         "breakout": false
       },
       {
         "symbol": "LALPATHLAB",
         "score": 68,
-        "price": 1899.9,
+        "price": 1897.6,
         "trend_up": true,
         "breakout": false
       },
       {
         "symbol": "TATACHEM",
-        "score": 67,
-        "price": 741.05,
+        "score": 66,
+        "price": 746.2,
         "trend_up": false,
         "breakout": true
       },
       {
         "symbol": "ANANDRATHI",
         "score": 62,
-        "price": 2194.3,
+        "price": 2197.2,
         "trend_up": true,
         "breakout": false
       },
       {
         "symbol": "FIVESTAR",
         "score": 57,
-        "price": 545.0,
+        "price": 544.8,
         "trend_up": true,
         "breakout": false
       },
       {
         "symbol": "REDINGTON",
         "score": 56,
-        "price": 383.35,
+        "price": 385.4,
         "trend_up": true,
         "breakout": false
       }
     ]
   },
-  "last_updated": "2026-09-16T11:38:46.667603",
+  "last_updated": "2026-09-16T11:45:08.036292",
   "intraday": {
-    "last_scan_time": "2026-09-16T11:38:46.666266+05:30",
+    "last_scan_time": "2026-09-16T11:41:55.648070+05:30",
     "universe_size": 150,
     "evaluated": 150,
     "open_positions": 0,
