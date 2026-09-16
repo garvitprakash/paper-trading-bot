@@ -1,6 +1,6 @@
 {
   "swing": {
-    "last_scan_time": "2026-09-16T10:31:00.306195+05:30",
+    "last_scan_time": "2026-09-16T10:49:41.897493+05:30",
     "universe_size": 150,
     "evaluated": 150,
     "open_positions": 1,
@@ -9,64 +9,64 @@
       {
         "symbol": "PAYTM",
         "score": 75,
-        "price": 1739.4,
+        "price": 1750.0,
         "trend_up": true,
         "breakout": false
       },
       {
         "symbol": "YESBANK",
         "score": 75,
-        "price": 23.58,
+        "price": 23.54,
         "trend_up": true,
         "breakout": false
       },
       {
         "symbol": "LALPATHLAB",
-        "score": 66,
-        "price": 1894.3,
+        "score": 69,
+        "price": 1901.0,
         "trend_up": true,
         "breakout": false
       },
       {
         "symbol": "AEGISLOG",
-        "score": 64,
-        "price": 1375.7,
+        "score": 67,
+        "price": 1378.0,
+        "trend_up": true,
+        "breakout": false
+      },
+      {
+        "symbol": "TATACHEM",
+        "score": 63,
+        "price": 759.15,
+        "trend_up": false,
+        "breakout": true
+      },
+      {
+        "symbol": "ANANDRATHI",
+        "score": 60,
+        "price": 2191.1,
         "trend_up": true,
         "breakout": false
       },
       {
         "symbol": "REDINGTON",
         "score": 55,
-        "price": 379.4,
+        "price": 382.05,
         "trend_up": true,
         "breakout": false
       },
       {
         "symbol": "FIVESTAR",
         "score": 54,
-        "price": 542.45,
-        "trend_up": true,
-        "breakout": false
-      },
-      {
-        "symbol": "ANANDRATHI",
-        "score": 52,
-        "price": 2174.4,
-        "trend_up": true,
-        "breakout": false
-      },
-      {
-        "symbol": "RBLBANK",
-        "score": 50,
-        "price": 398.7,
+        "price": 542.75,
         "trend_up": true,
         "breakout": false
       }
     ]
   },
-  "last_updated": "2026-09-16T10:43:02.349487",
+  "last_updated": "2026-09-16T10:49:41.898749",
   "intraday": {
-    "last_scan_time": "2026-09-16T10:43:02.348304+05:30",
+    "last_scan_time": "2026-09-16T10:46:55.844494+05:30",
     "universe_size": 150,
     "evaluated": 150,
     "open_positions": 0,
